@@ -1,0 +1,21 @@
+title: SSV Research Group
+description: Ca' Foscari's Software and System Verification Research Group
+
+author: 
+  name: Luca Negrini
+  email: luca.negrini@unive.it
+google_analytics: G-BKNTNQHL96
+
+# Build settings
+markdown: kramdown
+theme: minima
+minima:
+  skin: dark
+plugins:
+  - jekyll-feed
+
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - README.md
+   
