@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  cron-test-scheduler:
+  update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
