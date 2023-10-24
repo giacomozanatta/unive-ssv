@@ -1,2 +1,24 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+.div-img-table {
+	display: table;
+	width: 100%;
+	border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-img-table-row {
+	display: table-row;
+	clear: both;
+}
+.div-img-table-col {
+	float: left; /* fix for  buggy browsers */
+	display: table-column;
+	width: 32.5%;
+	margin: 0 3px;
+}
+.div-img-table-multicol {
+	float: left; /* fix for  buggy browsers */
+	display: table-column;
+	width: 99.2%;
+	margin: 0 3px;
+}
