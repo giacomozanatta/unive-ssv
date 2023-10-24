@@ -22,3 +22,27 @@
 	width: 99.2%;
 	margin: 0 3px;
 }
+
+.div-person-table {
+	display: table;
+	width: 100%;
+	border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-person-table-row {
+	display: table-row;
+	clear: both;
+}
+.div-person-table-col {
+	float: left; /* fix for  buggy browsers */
+	display: table-column;
+	width: 20%;
+}
+.div-person-table-multicol {
+	float: left; /* fix for  buggy browsers */
+	display: table-column;
+	width: 75%;
+	margin: 0 0 0 40px;
+}
+.div-person-table-multicol > h3{
+	margin-top: 10px;
+}
