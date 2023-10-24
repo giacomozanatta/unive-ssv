@@ -11,6 +11,7 @@ import yaml
 import sys
 from datetime import *
 import hashlib
+import os
 
 with open('users.yaml', 'r') as yamlfile:
     data = yaml.load(yamlfile, Loader=yaml.FullLoader)
@@ -159,6 +160,8 @@ title: Publications
 			day=publication[1].day, 
 			hash=hashlib.md5(publication[0].encode('utf-8')).hexdigest())
 		print("Generating news for ", publication[0], "(", newsname, ")")
+		if not os.path.exists('../news/_posts/'):
+			os.makedirs('../news/_posts/')
 		with open('../news/_posts/{fname}.md'.format(fname=newsname), 'w') as news:
 			news.write("""---
 layout: page
