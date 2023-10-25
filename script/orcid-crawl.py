@@ -12,26 +12,24 @@ import sys
 from datetime import *
 import hashlib
 import os
+import shutil
 
-with open('users.yaml', 'r') as yamlfile:
-    data = yaml.load(yamlfile, Loader=yaml.FullLoader)
-    print('Read configuration successfully')
+def query_api(access_token, user_id, method):
+	return query_path(access_token, '/' + user_id + '/' + method)
 
-access_token = sys.argv[1]
-api_url = 'https://pub.orcid.org/v2.1'
-headers_dict = {
-	'Accept': 'application/vnd.orcid+json',
-	'Authorization':'Bearer ' + access_token
-}
+def query_path(access_token, path):
+	headers_dict = {
+		'Accept': 'application/vnd.orcid+json',
+		'Authorization':'Bearer ' + access_token
+	}
+	response = requests.get('https://pub.orcid.org/v2.1' + path, headers=headers_dict) 
+	return json.loads(response.text)
 
-people = list()
-publications = list()
-
-for user in data['users']:
+def parse_user(access_token, user):
 	user_id = user['id']
 	print('Processing', user_id)
-	response = requests.get(api_url + '/' + user_id + '/person', headers=headers_dict) 
-	record = json.loads(response.text)
+
+	record = query_api(access_token, user_id, 'person')
 	name = record['name']['given-names']['value']
 	surname = record['name']['family-name']['value']
 	bio = record['biography']['content']
@@ -39,8 +37,7 @@ for user in data['users']:
 	website = record['researcher-urls']['researcher-url'][0]['url']['value']
 
 	try:
-		response = requests.get(api_url + '/' + user_id + '/activities', headers=headers_dict) 
-		record = json.loads(response.text)
+		record = query_api(access_token, user_id, 'activities')
 		role = record['employments']['employment-summary'][0]['role-title']
 		org = record['employments']['employment-summary'][0]['organization']['name']
 	except:
@@ -48,57 +45,58 @@ for user in data['users']:
 		role = 'PhD Student'
 		org = 'Università Ca\' Foscari Venezia'
 
-	person = (name, surname, user['photo'], mail, website, role, org, bio)
-	print(person)
-	people += [person]
+	return (name, surname, user['photo'], mail, website, role, org, bio), record['works']['group']
 
-	mindate = user['from']
-	maxdate = date.today() if user['to'] == 'today' else user['to']
-	for work in record['works']['group']:		
-		year = int(work['work-summary'][0]['publication-date']['year']['value'])
-		if work['work-summary'][0]['publication-date']['month'] is not None:
-			month = int(work['work-summary'][0]['publication-date']['month']['value'])
-		else:
-			month = 1
-		if work['work-summary'][0]['publication-date']['month'] is not None:
-			day = int(work['work-summary'][0]['publication-date']['day']['value'])
-		else:
-			day = 1
-		pubdate = date(year, month, day)
-		if pubdate < mindate or pubdate > maxdate:
-			continue
-		
-		workresponse = requests.get(api_url + work['work-summary'][0]['path'], headers=headers_dict) 
-		workrecord = json.loads(workresponse.text)
+def parse_work(access_token, min_date, max_date, work):
+	year = int(work['work-summary'][0]['publication-date']['year']['value'])
+	if work['work-summary'][0]['publication-date']['month'] is not None:
+		month = int(work['work-summary'][0]['publication-date']['month']['value'])
+	else:
+		month = 1
+	if work['work-summary'][0]['publication-date']['month'] is not None:
+		day = int(work['work-summary'][0]['publication-date']['day']['value'])
+	else:
+		day = 1
+	pub_date = date(year, month, day)
+	if pub_date < min_date or pub_date > max_date:
+		return None
 
-		title = workrecord['title']['title']['value']
-		pubtype = workrecord['type']
-		where = workrecord['journal-title']['value']
-		for extid in workrecord['external-ids']['external-id']:
-			#print(extid)
-			if extid['external-id-type'] == 'doi':
-				doi = extid['external-id-value']
-				break
-		contribs = list()
-		for contributor in workrecord['contributors']['contributor']:
-			contribs += [contributor['credit-name']['value']]
-		publication = (title, pubdate, pubtype, where, doi, contribs)
-		print(publication)
-		publications += [publication]
+	workrecord = query_path(access_token, work['work-summary'][0]['path'])
+	title = workrecord['title']['title']['value']
+	pubtype = workrecord['type']
+	where = workrecord['journal-title']['value']
+	doi = None
+	for extid in workrecord['external-ids']['external-id']:
+		#print(extid)
+		if extid['external-id-type'] == 'doi':
+			doi = extid['external-id-value']
+			break
+	contribs = list()
+	for contributor in workrecord['contributors']['contributor']:
+		contribs += [contributor['credit-name']['value']]
+	return (title, pub_date, pubtype, where, doi, contribs)
 
-def by_date(e):
-	return e[1]
-publications = reversed(sorted(publications, key=by_date))
+def by_date(publication):
+	return publication[1]
 
-with open('../people.md', 'w') as file:
-	file.write("""---
+def readable(kind):
+	r = kind.lower().replace('_', ' ')
+	if r == 'book':
+		r = 'book chapter'
+	elif r == 'other':
+		r = 'article'
+	return r
+
+def populate_people_page(people):
+	with open('../people.md', 'w') as file:
+		file.write("""---
 layout: page
 title: People
 ---
 """)
-	for person in people:
-		print("Adding", person[0], person[1], "to the People page")
-		file.write("""
+		for person in people:
+			print("Adding", person[0], person[1], "to the People page")
+			file.write("""
 <div class="div-person-table">
 	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{{{ site.baseurl }}}}/images/{picture}"/>
@@ -123,47 +121,15 @@ title: People
 	location=person[6], 
 	bio=person[7]))
 
-def readable(kind):
-	r = kind.lower().replace('_', ' ')
-	if r == 'book':
-		r = 'book chapter'
-	elif r == 'other':
-		r = 'article'
-	return r
-
-with open('../publications.md', 'w') as file:
-	file.write("""---
-layout: page
-title: Publications
----
-""")
-	curryear = None
-	for publication in publications:
-		year = publication[1].year
-		if curryear is None:
-			curryear = year
-			file.write('## {year}\n\n'.format(year=curryear))
-		elif year != curryear:
-			curryear = year
-			file.write('## {year}\n\n'.format(year=curryear))
-
-		print("Adding", publication[0], "to the Publications page")
-		file.write('{authors}: _"{title}"_, in {venue} [[DOI]](https://doi.org/{doi})\n\n'.format(
-			authors=', '.join(publication[5]), 
-			title=publication[0], 
-			venue=publication[3], 
-			doi=publication[4]))
-
-		newsname = '{year}-{month}-{day}-paper-{hash}'.format(
-			year=year, 
-			month=publication[1].month, 
-			day=publication[1].day, 
-			hash=hashlib.md5(publication[0].encode('utf-8')).hexdigest())
-		print("Generating news for ", publication[0], "(", newsname, ")")
-		if not os.path.exists('../news/_posts/'):
-			os.makedirs('../news/_posts/')
-		with open('../news/_posts/{fname}.md'.format(fname=newsname), 'w') as news:
-			news.write("""---
+def add_news(publication):
+	newsname = '{year}-{month}-{day}-paper-{hash}'.format(
+		year=publication[1].year, 
+		month=publication[1].month, 
+		day=publication[1].day, 
+		hash=hashlib.md5(publication[0].encode('utf-8')).hexdigest())
+	print("Generating news for", publication[0], "(", newsname, ")")		
+	with open('../news/_posts/{fname}.md'.format(fname=newsname), 'w') as news:
+		news.write("""---
 layout: page
 title: '{startingkind} published in "{venue}"'
 ---
@@ -172,12 +138,74 @@ title: '{startingkind} published in "{venue}"'
 
 The {kind} "{title}", by {authors}, has just been published in "{venue}"! Available [here](https://doi.org/{doi}).
 """.format(
-		authors=', '.join(publication[5]), 
-		title=publication[0], 
-		venue=publication[3], 
-		year=year, 
-		month=publication[1].month, 
-		day=publication[1].day, 
-		doi=publication[4], 
-		kind=readable(publication[2]),
-		startingkind=readable(publication[2]).capitalize()))
+	authors=', '.join(publication[5]), 
+	title=publication[0], 
+	venue=publication[3], 
+	year=publication[1].year, 
+	month=publication[1].month, 
+	day=publication[1].day, 
+	doi=publication[4], 
+	kind=readable(publication[2]),
+	startingkind=readable(publication[2]).capitalize()))
+
+def populate_publications_page(publications):
+	with open('../publications.md', 'w') as file:
+		file.write("""---
+layout: page
+title: Publications
+---
+""")
+		curryear = None
+		for publication in publications:
+			year = publication[1].year
+			if curryear is None:
+				curryear = year
+				file.write('## {year}\n\n'.format(year=curryear))
+			elif year != curryear:
+				curryear = year
+				file.write('## {year}\n\n'.format(year=curryear))
+
+			print("Adding", publication[0], "to the Publications page")
+			file.write('{authors}: _"{title}"_, in {venue} [[DOI]](https://doi.org/{doi})\n\n'.format(
+				authors=', '.join(publication[5]), 
+				title=publication[0], 
+				venue=publication[3], 
+				doi=publication[4]))
+
+if __name__ == '__main__':
+	with open('users.yaml', 'r') as yamlfile:
+	    data = yaml.load(yamlfile, Loader=yaml.FullLoader)
+	print('Configuration read successfully')
+
+	access_token = sys.argv[1]
+	people = list()
+	publications = list()
+
+	for user in data['users']:
+		person, works = parse_user(access_token, user)
+		print(person)
+		people += [person]
+
+		min_date = user['from']
+		max_date = date.today() if user['to'] == 'today' else user['to']
+		for work in works:
+			publication = parse_work(access_token, min_date, max_date, work)	
+			if publication is None:
+				continue
+			doi = publication[4]
+			if doi is not None and not any(doi == pub[4] for pub in publications):
+				# avoid duplicates
+				print(publication)
+				publications += [publication]
+
+	publications = sorted(publications, key=by_date)
+	populate_people_page(people)
+	populate_publications_page(reversed(publications))
+	
+	# cleanup news folder
+	if os.path.exists('../news/_posts/'):
+		shutil.rmtree('../news/_posts/')
+	os.makedirs('../news/_posts/')
+	
+	for publication in reversed(publications):
+		add_news(publication)
