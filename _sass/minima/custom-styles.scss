@@ -43,6 +43,15 @@
 	width: 75%;
 	margin: 0 0 0 40px;
 }
-.div-person-table-multicol > h3{
+.div-person-table-multicol > h3, .div-person-table-multicol > h5 {
 	margin-top: 10px;
+}
+
+ul.list-page {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+ul.list-page > li {
+  margin-bottom: 15px; 
 }

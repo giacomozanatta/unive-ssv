@@ -148,7 +148,7 @@ title: Publications
 			file.write('## {year}\n\n'.format(year=curryear))
 
 		print("Adding", publication[0], "to the Publications page")
-		file.write('{authors}: _"{title}"_, in {venue} [DOI](https://doi.org/{doi})\n\n'.format(
+		file.write('{authors}: _"{title}"_, in {venue} [[DOI]](https://doi.org/{doi})\n\n'.format(
 			authors=', '.join(publication[5]), 
 			title=publication[0], 
 			venue=publication[3], 
@@ -168,11 +168,16 @@ layout: page
 title: '{startingkind} published in "{venue}"'
 ---
 
+<small>{{{{ page.date | date: "%-d %B %Y" }}}}</small>
+
 The {kind} "{title}", by {authors}, has just been published in "{venue}"! Available [here](https://doi.org/{doi}).
 """.format(
 		authors=', '.join(publication[5]), 
 		title=publication[0], 
 		venue=publication[3], 
+		year=year, 
+		month=publication[1].month, 
+		day=publication[1].day, 
 		doi=publication[4], 
 		kind=readable(publication[2]),
 		startingkind=readable(publication[2]).capitalize()))

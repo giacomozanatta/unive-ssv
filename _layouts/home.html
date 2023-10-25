@@ -9,8 +9,8 @@ layout: base
 
   {{ content }}
 
-  <h3>Latest news</h3>
-  <ul>
+  <h2>Latest news</h2>
+  <ul class="list-page">
   {% for post in site.categories.news limit: 2 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a><br/>
@@ -18,10 +18,10 @@ layout: base
     </li>
   {% endfor %}
   </ul>
-  <a href="{{ site.baseurl }}/news/">All news ({{ site.categories.news.size }}) &gt;&gt;</a><br><br>
+  <a href="{{ site.baseurl }}/news/">All news ({{ site.categories.news.size }}) »</a><br><br>
 
-  <h3>Latest events</h3>
-  <ul>
+  <h2>Latest events</h2>
+  <ul class="list-page">
   {% for post in site.categories.events limit: 2 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a><br/>
@@ -29,7 +29,7 @@ layout: base
     </li>
   {% endfor %}
   </ul>
-  <a href="{{ site.baseurl }}/events/">All events ({{ site.categories.events.size }}) &gt;&gt;</a><br><br>
+  <a href="{{ site.baseurl }}/events/">All events ({{ site.categories.events.size }}) »</a><br><br>
 
   <div class="div-img-table">
     <div class="div-img-table-row">
