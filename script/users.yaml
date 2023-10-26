@@ -1,9 +1,14 @@
 users:
   - id: 0000-0002-4678-933X
-    photo: ferrara-pietro.png
+    photo: pfp-ferrara-pietro.png
     from: 2019-01-01
     to: today
   - id: 0000-0001-9930-8854
-    photo: negrini-luca.jpeg
+    photo: pfp-negrini-luca.jpeg
     from: 2019-09-15
     to: today
+past_users:
+  - id: 0000-0002-5150-0393
+    photo: pfp-arceri-vincenzo.jpg
+    from: 2019-09-01
+    to: 2021-09-30

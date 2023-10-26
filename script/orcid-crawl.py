@@ -53,7 +53,7 @@ def parse_work(access_token, min_date, max_date, work):
 		month = int(work['work-summary'][0]['publication-date']['month']['value'])
 	else:
 		month = 1
-	if work['work-summary'][0]['publication-date']['month'] is not None:
+	if work['work-summary'][0]['publication-date']['day'] is not None:
 		day = int(work['work-summary'][0]['publication-date']['day']['value'])
 	else:
 		day = 1
@@ -87,16 +87,9 @@ def readable(kind):
 		r = 'article'
 	return r
 
-def populate_people_page(people):
-	with open('../people.md', 'w') as file:
-		file.write("""---
-layout: page
-title: People
----
-""")
-		for person in people:
-			print("Adding", person[0], person[1], "to the People page")
-			file.write("""
+def populate_single_person(file, person):
+	print("Adding", person[0], person[1], "to the People page")
+	file.write("""
 <div class="div-person-table">
 	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{{{ site.baseurl }}}}/images/{picture}"/>
@@ -120,6 +113,19 @@ title: People
 	position=person[5], 
 	location=person[6], 
 	bio=person[7]))
+
+def populate_people_page(people, past_people):
+	with open('../people.md', 'w') as file:
+		file.write("""---
+layout: page
+title: People
+---
+""")
+		for person in people:
+			populate_single_person(file, person)
+		file.write('## Past members')
+		for person in past_people:
+			populate_single_person(file, person)
 
 def add_news(publication):
 	newsname = '{year}-{month}-{day}-paper-{hash}'.format(
@@ -179,6 +185,7 @@ if __name__ == '__main__':
 
 	access_token = sys.argv[1]
 	people = list()
+	past_people = list()
 	publications = list()
 
 	for user in data['users']:
@@ -198,8 +205,25 @@ if __name__ == '__main__':
 				print(publication)
 				publications += [publication]
 
+	for user in data['past_users']:
+		person, works = parse_user(access_token, user)
+		print(person)
+		past_people += [person]
+
+		min_date = user['from']
+		max_date = date.today() if user['to'] == 'today' else user['to']
+		for work in works:
+			publication = parse_work(access_token, min_date, max_date, work)	
+			if publication is None:
+				continue
+			doi = publication[4]
+			if doi is not None and not any(doi == pub[4] for pub in publications):
+				# avoid duplicates
+				print(publication)
+				publications += [publication]
+
 	publications = sorted(publications, key=by_date)
-	populate_people_page(people)
+	populate_people_page(people, past_people)
 	populate_publications_page(reversed(publications))
 	
 	# cleanup news folder
