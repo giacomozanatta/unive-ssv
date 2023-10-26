@@ -26,6 +26,16 @@ Olivieri, L., Tagliaferro, F., Arceri, V., Ruaro, M., Negrini, L., Cortesi, A., 
 
 ## 2021
 
+: _"Improving Dynamic Code Analysis by Code Abstraction"_, in Electronic Proceedings in Theoretical Computer Science [[DOI]](https://doi.org/10.4204/eptcs.341.2)
+
+: _"Completeness of String Analysis for Dynamic Languages"_, in Information and Computation [[DOI]](https://doi.org/10.1016/j.ic.2021.104791)
+
+Vincenzo Arceri, Isabella Mastroeni: _"Analyzing Dynamic Code"_, in ACM Transactions on Privacy and Security [[DOI]](https://doi.org/10.1145/3426470)
+
+Mastroeni, I., Arceri, V.: _"Improving dynamic code analysis by code abstraction"_, in arXiv [[DOI]](https://doi.org/10.48550/arxiv.2109.02813)
+
+Mastroeni, I., Arceri, V.: _"Improving dynamic code analysis by code abstraction"_, in Electronic Proceedings in Theoretical Computer Science, EPTCS [[DOI]](https://doi.org/10.4204/EPTCS.341.2)
+
 Negrini, L., Arceri, V., Ferrara, P., Cortesi, A.: _"Twinning Automata and Regular Expressions for String Static Analysis"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-67067-2_13)
 
 Ferrara, P., Negrini, L., Arceri, V., Cortesi, A.: _"Static analysis for dummies: Experiencing LiSA"_, in SOAP 2021 - Proceedings of the 10th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis, co-located with PLDI 2021 [[DOI]](https://doi.org/10.1145/3460946.3464316)
@@ -37,6 +47,12 @@ Ferrara, P., Olivieri, L., Spoto, F.: _"Static Privacy Analysis by Flow Reconstr
 Salvia, R., Cortesi, A., Ferrara, P., Spoto, F.: _"Intents Analysis of Android Apps for Confidentiality Leakage Detection"_, in Advances in Intelligent Systems and Computing [[DOI]](https://doi.org/10.1007/978-981-15-5747-7_4)
 
 ## 2020
+
+Vincenzo Arceri, Isabella Mastroeni, Sunyi Xu: _"Static Analysis for ECMAScript String Manipulation Programs"_, in Applied Sciences [[DOI]](https://doi.org/10.3390/app10103525)
+
+: _"An Abstract Domain for Objects in Dynamic Programming Languages"_, in Lecture Notes in Computer Science [[DOI]](https://doi.org/10.1007/978-3-030-54997-8_9)
+
+Arceri, V., Mastroeni, I.: _"A sound abstract interpreter for dynamic code"_, in Proceedings of the ACM Symposium on Applied Computing [[DOI]](https://doi.org/10.1145/3341105.3373964)
 
 Negrini, L., Arceri, V., Ferrara, P., Cortesi, A.: _"Twinning automata and regular expressions for string static analysis"_, in arXiv [[DOI]](https://doi.org/10.48550/arxiv.2006.02715)
 
