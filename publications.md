@@ -26,9 +26,9 @@ Olivieri, L., Tagliaferro, F., Arceri, V., Ruaro, M., Negrini, L., Cortesi, A., 
 
 ## 2021
 
-: _"Improving Dynamic Code Analysis by Code Abstraction"_, in Electronic Proceedings in Theoretical Computer Science [[DOI]](https://doi.org/10.4204/eptcs.341.2)
+Vincenzo Arceri, Isabella Mastroeni: _"Improving Dynamic Code Analysis by Code Abstraction"_, in Electronic Proceedings in Theoretical Computer Science [[DOI]](https://doi.org/10.4204/eptcs.341.2)
 
-: _"Completeness of String Analysis for Dynamic Languages"_, in Information and Computation [[DOI]](https://doi.org/10.1016/j.ic.2021.104791)
+Vincenzo Arceri, Martina Olliaro, Isabella Mastroeni, Agostino Cortesi: _"Completeness of String Analysis for Dynamic Languages"_, in Information and Computation [[DOI]](https://doi.org/10.1016/j.ic.2021.104791)
 
 Vincenzo Arceri, Isabella Mastroeni: _"Analyzing Dynamic Code"_, in ACM Transactions on Privacy and Security [[DOI]](https://doi.org/10.1145/3426470)
 
