@@ -1,9 +1,71 @@
-# https://github.com/ORCID/ORCID-Source/tree/main/orcid-api-web
-
-# To get access token: 
+#########################################################################################
+#                                                                                       #
+# Script to auto-update publications, people, and news for the ssv website.             #
+# This script pulls data from ORCID using their public APIs. To use them, it            #
+# is necessary to define an application that can interact with the APIs.                #
+#                                                                                       #
+# Follow the insructions at https://info.orcid.org/documentation/features/public-api/   #
+# to generate an application, and retrieve its ID and SECRET.                           #
+#                                                                                       #
+# The, use the following command to generate a token for using the API:                 #
 # curl -i -L -H 'Accept: application/json' -d 'client_id=[APP ID]' -d 'client_secret=[APP SECRET]' -d 'scope=/read-public' -d 'grant_type=client_credentials' 'https://orcid.org/oauth/token'
-
-# To get APP ID and SECRET: https://info.orcid.org/documentation/features/public-api/
+#                                                                                       #
+# The response will have the following structure:                                       #
+# {                                                                                     #
+#   "access_token": "[ACCESS_TOKEN]",                                                   #
+#   "token_type": "bearer",                                                             #
+#   "refresh_token": "[REFRESH_TOKEN]",                                                 #
+#   "expires_in": [EXPIRATION],                                                         #
+#   "scope": "/read-public",                                                            #
+#   "orcid":null                                                                        #
+# }                                                                                     #
+# Note that the access token lasts ~20 years.                                           #
+#                                                                                       #
+# You can then use the generated access token as argument for this script:              #
+# python3 orcid-crawl.py [ACCESS_TOKEN]                                                 #
+#                                                                                       #
+# The script will use such token to issue requests to the ORCID web API:                #
+# https://github.com/ORCID/ORCID-Source/tree/main/orcid-api-web                         #
+#                                                                                       #
+# This script works by taking information out of the 'users.yaml' file located          #
+# in the same directory. Such a file should be split in two sections, each              #
+# containing a list of user information with <orcid, photo, from, to> where             #
+# - <orcid> is the user's identifiaction number on ORCID                                #
+# - <photo> is the filename of the image living under website_root/images/ to           #
+#   use as profile picture for them                                                     #
+# - <from> is the date (YYYY-MM-DD) when they joined the lab, used to filter out        #
+#   publications published before they joined                                           #
+# - <to> is the date (YYYY-MM-DD) when they left the lab, used to filter out            #
+#   publications published after they joined (if they are still part of the lab,        #
+#   'today' can be used)                                                                #
+#                                                                                       #
+# An example file is:                                                                   #
+# users:                                                                                #
+#   - id: 0000-0000-0000-0000                                                           #
+#     photo: img1.png                                                                   #
+#     from: 2019-01-01                                                                  #
+#     to: today                                                                         #
+#   - id: 0000-0000-0000-0001                                                           #
+#     photo: img2.png                                                                   #
+#     from: 2019-09-15                                                                  #
+#     to: today                                                                         #
+# past_users:                                                                           #
+#   - id: 0000-0000-0000-0002                                                           #
+#     photo: img3.png                                                                   #
+#     from: 2019-09-01                                                                  #
+#     to: 2021-09-30                                                                    #
+#                                                                                       #
+# The script then will:                                                                 #
+# - fill up '../people.md' with the info crawled for each entry in 'users' and          #
+#   'past_users', placing them in their respective sections                             #
+# - fill up '../publications.md' with works from both present and past users that       #
+#   were published within the time window of at least one of the autors (to avoid       #
+#   duplicates, we discriminate publications based on DOI)                              #
+# - generate a news page under '../news/_posts/' named after the publication date       #
+#   and the hash of the publication's title, containing a brief text to illustrate      #
+#   what was published                                                                  #
+#                                                                                       #
+#########################################################################################
 
 import requests
 import json
@@ -44,11 +106,10 @@ class User:
 			{email}<br/>
 			{website}
 		</div>
-	</div>	
+	</div>  
 </div>
 {bio}
 <br/><br/>
-
 '''
 
 class Pub:
@@ -72,7 +133,7 @@ class Pub:
 			r = 'book chapter'
 		elif r == 'other':
 			r = 'article'
-		return r	
+		return r    
 
 	def dump(self):
 		authors = ', '.join(self.contribs)
@@ -169,7 +230,7 @@ def parse_work(access_token, min_date, max_date, work):
 def add_news(publication):
 	name_hash = hashlib.md5(publication.title.encode('utf-8')).hexdigest()
 	news_name = f'{publication.pub_date.year}-{publication.pub_date.month}-{publication.pub_date.day}-paper-{name_hash}'
-	print('Generating news for', publication.title, '(', news_name, ')')		
+	print('Generating news for', publication.title, '(', news_name, ')')        
 	with open(f'../news/_posts/{news_name}.md', 'w') as news:
 		news.write(publication.to_news_page())
 
@@ -203,7 +264,7 @@ title: People
 		for person in people:
 			print("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
-		file.write('## Past members')
+		file.write('## Past members\n')
 		for person in past_people:
 			print("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
@@ -226,7 +287,7 @@ def process_user_and_add(user, people_list, publications_list):
 			print('\tPublication discarded due to missing fields')
 			continue
 		elif publication.doi is None or any(publication.doi == pub.doi for pub in publications_list):
-			print('\tPublication discarded due to duplicate doi')
+			print('\tPublication discarded due to missing or duplicate doi')
 			continue
 		else:
 			publications_list += [publication]
@@ -236,7 +297,7 @@ def sort_by_date(publication):
 
 if __name__ == '__main__':
 	with open('users.yaml', 'r') as yamlfile:
-	    data = yaml.load(yamlfile, Loader=yaml.FullLoader)
+		data = yaml.load(yamlfile, Loader=yaml.FullLoader)
 	print('Configuration read successfully')
 
 	access_token = sys.argv[1]
