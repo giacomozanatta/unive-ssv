@@ -106,7 +106,7 @@ class User:
 			{email}<br/>
 			{website}
 		</div>
-	</div>  
+	</div>
 </div>
 {bio}
 <br/><br/>
@@ -133,7 +133,7 @@ class Pub:
 			r = 'book chapter'
 		elif r == 'other':
 			r = 'article'
-		return r    
+		return r
 
 	def dump(self):
 		authors = ', '.join(self.contribs)
@@ -161,7 +161,7 @@ def query_path(access_token, path, log=False):
 		'Accept': 'application/vnd.orcid+json',
 		'Authorization':'Bearer ' + access_token
 	}
-	response = requests.get('https://pub.orcid.org/v2.1' + path, headers=headers_dict) 
+	response = requests.get('https://pub.orcid.org/v2.1' + path, headers=headers_dict)
 	if log:
 		print('## Result of querying', path, '##')
 		print(response.text)
@@ -188,12 +188,14 @@ def parse_user(access_token, user):
 	mail = access_field(lambda r: r['emails']['email'][0]['email'], record, 'mail')
 	website = access_field(lambda r: r['researcher-urls']['researcher-url'][0]['url']['value'], record, 'website')
 
-	try:
-		record = query_api(access_token, user_id, 'activities')
-		role = access_field(lambda r: r['employments']['employment-summary'][0]['role-title'], record, 'role')
-		org = access_field(lambda r: r['employments']['employment-summary'][0]['organization']['name'], record, 'org')
-	except:
+
+	record = query_api(access_token, user_id, 'activities')
+	role = access_field(lambda r: r['employments']['employment-summary'][0]['role-title'], record, 'role')
+	org = access_field(lambda r: r['employments']['employment-summary'][0]['organization']['name'], record, 'org')
+
+	if role is None and org is None:
 		# if no employment, this is a student
+		print('Forcing role to PhD Student')
 		role = 'PhD Student'
 		org = 'Università Ca\' Foscari Venezia'
 
@@ -208,7 +210,7 @@ def parse_work(access_token, min_date, max_date, work):
 	year = int(access_field(lambda r: r['work-summary'][0]['publication-date']['year']['value'], work, 'year'))
 	month = int(access_field(lambda r: r['work-summary'][0]['publication-date']['month']['value'], work, 'month', default=1))
 	day = int(access_field(lambda r: r['work-summary'][0]['publication-date']['day']['value'], work, 'day', default=1))
-	
+
 	pub_date = date(year, month, day)
 	if pub_date < min_date or pub_date > max_date:
 		# exclude the publication
@@ -230,7 +232,7 @@ def parse_work(access_token, min_date, max_date, work):
 def add_news(publication):
 	name_hash = hashlib.md5(publication.title.encode('utf-8')).hexdigest()
 	news_name = f'{publication.pub_date.year}-{publication.pub_date.month}-{publication.pub_date.day}-paper-{name_hash}'
-	print('Generating news for', publication.title, '(', news_name, ')')        
+	print('Generating news for', publication.title, '(', news_name, ')')
 	with open(f'../news/_posts/{news_name}.md', 'w') as news:
 		news.write(publication.to_news_page())
 
@@ -314,11 +316,11 @@ if __name__ == '__main__':
 	publications = sorted(publications, key=sort_by_date)
 	populate_people_page(people, past_people)
 	populate_publications_page(reversed(publications))
-	
+
 	# cleanup news folder
 	if os.path.exists('../news/_posts/'):
 		shutil.rmtree('../news/_posts/')
 	os.makedirs('../news/_posts/')
-	
+
 	for publication in reversed(publications):
 		add_news(publication)
