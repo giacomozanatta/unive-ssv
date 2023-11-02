@@ -12,7 +12,7 @@ title: People
 			Email: <a href="mailto:pietro.ferrara@unive.it">pietro.ferrara@unive.it</a><br/>
 			Website: <a href="https://www.dais.unive.it/~ferrara/">https://www.dais.unive.it/~ferrara/</a>
 		</div>
-	</div>  
+	</div>
 </div>
 Pietro Ferrara is an expert of static analysis based on the abstract interpretation theory with a focus on the detection of security vulnerabilities and privacy leaks in object-oriented programs.
 
@@ -30,9 +30,23 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 			Email: <a href="mailto:luca.negrini@unive.it">luca.negrini@unive.it</a><br/>
 			Website: <a href="https://lucaneg.github.io">https://lucaneg.github.io</a>
 		</div>
-	</div>  
+	</div>
 </div>
 I got a Bachelor’s and Master’s degrees at the University of Verona. I got in touch with JuliaSoft during my Master’s thesis, and that was the place where I got interested in Abstract Interpretation. I was a developer of the Julia static analyzer in JuliaSoft from April 2018 to June 2023. I got my PhD in Computer Science in January 2023, focusing on Multi-language Static Analysis, at the Ca’ Foscari University of Venice. Since July 2023, I am a research fellow there.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Giacomo Boldini</h3>
+			<h5>PhD Student @ Università Ca' Foscari Venezia</h5>
+			Email: <a href="mailto:giacomo.boldini@unive.it">giacomo.boldini@unive.it</a><br/>
+			
+		</div>
+	</div>
+</div>
+Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where his primary research interests lie in the domains of static analysis, abstract interpretation, and program verification. He obtained both his Bachelor's and Master's degrees in Computer Science at the University of Parma. His Master's thesis, titled "Source code clustering via explainable code similarity based on control flow graph features", centered around source code similarity and the development of explainable source code representation designed to facilitate machine learning methodologies in understanding code features and their similarities. During his Master's degree at the University of Parma, he also worked on a project involving the optimization and parallelization of code, leveraging the power of NVIDIA GPUs and the CUDA programming model to enhance the performance of numerical analysis algorithms.
 <br/><br/>
 ## Past members
 
@@ -45,7 +59,7 @@ I got a Bachelor’s and Master’s degrees at the University of Verona. I got i
 			Email: <a href="mailto:vincenzo.arceri@unipr.it">vincenzo.arceri@unipr.it</a><br/>
 			Website: <a href="https://vincenzoarceri.github.io/">https://vincenzoarceri.github.io/</a>
 		</div>
-	</div>  
+	</div>
 </div>
 Vincenzo Arceri has a Bachelor Degree in Computer Science (July 2014) and a Master Degree in Computer Science and Engineering – Computer Systems Security curriculum – (July 2016), both issued by the University of Verona. He was an UROP Student at the Imperial College London (Summer 2016), under the supervision of Prof. Sergio Maffeis. Vincenzo Arceri joined the University of Verona in October 2016 as PhD student in Computer Science, under the supervision of Prof. Isabella Mastroeni and he got the PhD in May 2020, defending my PhD thesis titled “Taming Strings in Dynamic Languages – An Abstract Interpretation-based Static Analysis Approach”. From September 2019 to September 2021, he was a postdoctoral researcher at the Ca’ Foscari University of Venice in the Software and System Verification research group. 
 
