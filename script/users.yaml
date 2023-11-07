@@ -11,6 +11,10 @@ users:
     photo: pfp-boldini-giacomo.jpg
     from: 2023-09-15
     to: today
+  - id: 0009-0003-4022-9766
+    photo: pfp-chowdhury-purbasha.jpg
+    from: 2022-09-15
+    to: today
 past_users:
   - id: 0000-0002-5150-0393
     photo: pfp-arceri-vincenzo.jpg
