@@ -26,13 +26,13 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-negrini-luca.jpeg"/>
 		<div class="div-person-table-multicol">
 			<h3>Luca Negrini</h3>
-			<h5>Research Fellow @ Università Ca' Foscari Venezia</h5>
+			<h5>Assistant Professor (non-tenure) @ Università Ca' Foscari Venezia</h5>
 			Email: <a href="mailto:luca.negrini@unive.it">luca.negrini@unive.it</a><br/>
 			Website: <a href="https://lucaneg.github.io">https://lucaneg.github.io</a>
 		</div>
 	</div>
 </div>
-I got a Bachelor’s and Master’s degrees at the University of Verona. I got in touch with JuliaSoft during my Master’s thesis, and that was the place where I got interested in Abstract Interpretation. I was a developer of the Julia static analyzer in JuliaSoft from April 2018 to June 2023. I got my PhD in Computer Science in January 2023, focusing on Multi-language Static Analysis, at the Ca’ Foscari University of Venice. Since July 2023, I am a research fellow there.
+I got a Bachelor’s and Master’s degrees at the University of Verona, followed by a five years industrial experience on development and applications of Static Analysis and Abstract Interpretation with the Julia static analyzer. I got my PhD in Computer Science in January 2023 at the Ca’ Foscari University of Venice, focusing on Multi-language Static Analysis. I then joined Ca' Foscari as a research fellow, and I am currently an Assistant Professor (non-tenure) there.
 <br/><br/>
 
 <div class="div-person-table">
