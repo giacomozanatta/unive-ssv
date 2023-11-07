@@ -53,7 +53,7 @@ Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where hi
 	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-chowdhury-purbasha.jpg"/>
 		<div class="div-person-table-multicol">
-			<h3>PURBASHA CHOWDHURY</h3>
+			<h3>Purbasha Chowdhury</h3>
 			<h5>PhD Student @ Università Ca' Foscari Venezia</h5>
 			Email: <a href="mailto:purbasha.chowdhury@unive.it">purbasha.chowdhury@unive.it</a><br/>
 			
