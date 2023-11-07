@@ -48,6 +48,24 @@ I got a Bachelor’s and Master’s degrees at the University of Verona. I got i
 </div>
 Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where his primary research interests lie in the domains of static analysis, abstract interpretation, and program verification. He obtained both his Bachelor's and Master's degrees in Computer Science at the University of Parma. His Master's thesis, titled "Source code clustering via explainable code similarity based on control flow graph features", centered around source code similarity and the development of explainable source code representation designed to facilitate machine learning methodologies in understanding code features and their similarities. During his Master's degree at the University of Parma, he also worked on a project involving the optimization and parallelization of code, leveraging the power of NVIDIA GPUs and the CUDA programming model to enhance the performance of numerical analysis algorithms.
 <br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-chowdhury-purbasha.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>PURBASHA CHOWDHURY</h3>
+			<h5>PhD Student @ Università Ca' Foscari Venezia</h5>
+			Email: <a href="mailto:purbasha.chowdhury@unive.it">purbasha.chowdhury@unive.it</a><br/>
+			
+		</div>
+	</div>
+</div>
+I started career as a Ph.D. student at Ca’ Foscari University of Venice, where the primary research area belongs from the domains of taint analysis, relational tainting, static analysis, abstract interpretation, and program verification. I received both of my Bachelor’s and Master’s degrees in Computer Science and Engineering at the University of Calcutta, India. 
+
+My master’s thesis, titled as “Incorporating Multiple Bioassay and Cross Contamination Avoidance in Digital Microfluidic Biochip ”, centered around the Digital Microfluidic Biochips (DMFBs), commonly referred to as lab-on-a-chip where the research includes VLSI design. The design of a compact chip measuring 15×15 with a mere 13 pins was presented. This chip effectively integrates three distinct assay operations: nPI, PCR, and In-Vitro diagnostics, demonstrating promising completion times compared to existing commercial biochips. By reducing the overall pin count and improving the utilization factor, the chip becomes more cost-effective. Additionally, the routing scheme implemented ensures proficient prevention of cross-contamination issues while maintaining fluidic constraints. 
+
+I worked as a research fellow at Ca'Foscari University of Venice in the domain of “Data User Security Trust” where the experiment was based on the data leakage static analysis of python scripts extracted from jupyter notebooks containing sensitive Information of public administration using static analyzer LiSA (Library for Static Analysis).
+<br/><br/>
 ## Past members
 
 <div class="div-person-table">
