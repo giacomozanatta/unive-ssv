@@ -9,6 +9,7 @@ google_analytics: G-BKNTNQHL96
 # Build settings
 markdown: kramdown
 theme: minima
+future: true
 minima:
   skin: dark
 plugins:
@@ -19,4 +20,3 @@ exclude:
    - Gemfile.lock
    - README.md
    - script
-   
