@@ -76,15 +76,19 @@ import hashlib
 import os
 import shutil
 
+def log(*messages):
+	if verbose:
+		print(*messages)
+
 class User:
 	def __init__(self, name, surname, photo, mail, website, role, org, bio, raw_works):
-		self.name = name
-		self.surname = surname
+		self.name = name.title() if name is not None else None
+		self.surname = surname.title() if surname is not None else None
 		self.photo = photo
 		self.mail = mail
 		self.website = website
-		self.role = role
-		self.org = org
+		self.role = role.title() if role is not None else None
+		self.org = org.title() if org is not None else None
 		self.bio = bio
 		self.raw_works = raw_works
 
@@ -153,33 +157,33 @@ title: '{starting_kind} published in "{self.where}"'
 The {kind} "{self.title}", by {authors}, has just been published in "{self.where}"! Available [here](https://doi.org/{self.doi}).
 '''
 
-def query_api(access_token, user_id, method, log=False):
-	return query_path(access_token, '/' + user_id + '/' + method, log)
+def query_api(access_token, user_id, method, do_log=False):
+	return query_path(access_token, '/' + user_id + '/' + method, do_log)
 
-def query_path(access_token, path, log=False):
+def query_path(access_token, path, do_log=False):
 	headers_dict = {
 		'Accept': 'application/vnd.orcid+json',
 		'Authorization':'Bearer ' + access_token
 	}
 	response = requests.get('https://pub.orcid.org/v2.1' + path, headers=headers_dict)
-	if log:
-		print('## Result of querying', path, '##')
-		print(response.text)
+	if do_log:
+		log('## Result of querying', path, '##')
+		log(response.text)
 	return json.loads(response.text)
 
-def access_field(accessor, element, field, default=None, log=True):
+def access_field(accessor, element, field, default=None, do_log=True):
 	try:
 		el = accessor(element)
-		if log:
-			print('\t' + field + ':', el)
+		if do_log:
+			log('\t' + field + ':', el)
 		return el
 	except Exception as e:
-		print('\tUnable to retrieve value for', field, ', will use default value', default, '. Reason:', str(e))
+		log('\tUnable to retrieve value for', field, ', will use default value', default, '. Reason:', str(e))
 		return default
 
 def parse_user(access_token, user):
 	user_id = user['id']
-	print('Processing', user_id)
+	log('Processing', user_id)
 
 	record = query_api(access_token, user_id, 'person')
 	name = access_field(lambda r: r['name']['given-names']['value'], record, 'name')
@@ -195,19 +199,19 @@ def parse_user(access_token, user):
 
 	if role is None and org is None:
 		# if no employment, this is a student
-		print('Forcing role to PhD Student')
+		log('Forcing role to PhD Student')
 		role = 'PhD Student'
 		org = 'Università Ca\' Foscari Venezia'
 
-	raw_works = access_field(lambda r: r['works']['group'], record, 'works', default=list(), log=False)
+	raw_works = access_field(lambda r: r['works']['group'], record, 'works', default=list(), do_log=False)
 	return User(name, surname, user['photo'], mail, website, role, org, bio, raw_works)
 
 def parse_work(access_token, min_date, max_date, work):
-	workrecord = query_path(access_token, access_field(lambda r: r['work-summary'][0]['path'], work, 'work path', log=False))
-	title = access_field(lambda r: r['title']['title']['value'], workrecord, 'title', log=False)
-	print('Processing', title)
+	workrecord = query_path(access_token, access_field(lambda r: r['work-summary'][0]['path'], work, 'work path', do_log=False))
+	title = access_field(lambda r: r['title']['title']['value'], workrecord, 'title', do_log=False)
+	log('Processing', title)
 
-	year = int(access_field(lambda r: r['work-summary'][0]['publication-date']['year']['value'], work, 'year'))
+	year = int(access_field(lambda r: r['work-summary'][0]['publication-date']['year']['value'], work, 'year', default=date.today().year))
 	month = int(access_field(lambda r: r['work-summary'][0]['publication-date']['month']['value'], work, 'month', default=1))
 	day = int(access_field(lambda r: r['work-summary'][0]['publication-date']['day']['value'], work, 'day', default=1))
 
@@ -218,21 +222,22 @@ def parse_work(access_token, min_date, max_date, work):
 
 	pub_type = access_field(lambda r: r['type'], workrecord, 'type')
 	where = access_field(lambda r: r['journal-title']['value'], workrecord, 'venue')
+	if where is not None:
+		where = where.replace("'", "")
 	doi = None
-	for extid in access_field(lambda r: r['external-ids']['external-id'], workrecord, 'external ids', default=list(), log=False):
-		#print(extid)
-		if access_field(lambda r: r['external-id-type'], extid, 'external id type', log=False) == 'doi':
+	for extid in access_field(lambda r: r['external-ids']['external-id'], workrecord, 'external ids', default=list(), do_log=False):
+		if access_field(lambda r: r['external-id-type'], extid, 'external id type', do_log=False) == 'doi':
 			doi = access_field(lambda r: r['external-id-value'], extid, 'external id')
 			break
 	contribs = list()
-	for contributor in access_field(lambda r: r['contributors']['contributor'], workrecord, 'contributors', default=list(), log=False):
+	for contributor in access_field(lambda r: r['contributors']['contributor'], workrecord, 'contributors', default=list(), do_log=False):
 		contribs += [access_field(lambda r: r['credit-name']['value'], contributor, 'contributor name')]
 	return Pub(title, pub_date, pub_type, where, doi, contribs)
 
 def add_news(publication):
 	name_hash = hashlib.md5(publication.title.encode('utf-8')).hexdigest()
 	news_name = f'{publication.pub_date.year}-{publication.pub_date.month}-{publication.pub_date.day}-paper-{name_hash}'
-	print('Generating news for', publication.title, '(', news_name, ')')
+	log('Generating news for', publication.title, '(', news_name, ')')
 	with open(f'../news/_posts/{news_name}.md', 'w') as news:
 		news.write(publication.to_news_page())
 
@@ -253,7 +258,7 @@ title: Publications
 				curryear = year
 				file.write(f'## {curryear}\n\n')
 
-			print("Adding", publication.title, "to the Publications page")
+			log("Adding", publication.title, "to the Publications page")
 			file.write(publication.dump())
 
 def populate_people_page(people, past_people):
@@ -264,11 +269,11 @@ title: People
 ---
 """)
 		for person in people:
-			print("Adding", person.name, person.surname, "to the People page")
+			log("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
 		file.write('## Past members\n')
 		for person in past_people:
-			print("Adding", person.name, person.surname, "to the People page")
+			log("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
 
 def process_user_and_add(user, people_list, publications_list):
@@ -276,20 +281,20 @@ def process_user_and_add(user, people_list, publications_list):
 	if person.has_necessary_fields():
 		people_list += [person]
 	else:
-		print('\tUser discarded due to missing fields')
+		log('\tUser discarded due to missing fields')
 
 	min_date = user['from']
 	max_date = date.today() if user['to'] == 'today' else user['to']
 	for work in person.raw_works:
 		publication = parse_work(access_token, min_date, max_date, work)
 		if publication.is_out_of_date_period():
-			print('\tPublication discarded since it is outside of the specified date range')
+			log('\tPublication discarded since it is outside of the specified date range')
 			continue
 		elif not publication.has_necessary_fields():
-			print('\tPublication discarded due to missing fields')
+			log('\tPublication discarded due to missing fields')
 			continue
 		elif publication.doi is None or any(publication.doi == pub.doi for pub in publications_list):
-			print('\tPublication discarded due to missing or duplicate doi')
+			log('\tPublication discarded due to missing or duplicate doi')
 			continue
 		else:
 			publications_list += [publication]
@@ -298,11 +303,16 @@ def sort_by_date(publication):
 	return publication.pub_date
 
 if __name__ == '__main__':
+	access_token = sys.argv[1]
+	global verbose
+	verbose = False
+	if len(sys.argv) > 2 and sys.argv[2] == 'verbose':
+		verbose = True
+
 	with open('users.yaml', 'r') as yamlfile:
 		data = yaml.load(yamlfile, Loader=yaml.FullLoader)
-	print('Configuration read successfully')
+	log('Configuration read successfully')
 
-	access_token = sys.argv[1]
 	people = list()
 	past_people = list()
 	publications = list()

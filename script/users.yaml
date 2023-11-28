@@ -1,4 +1,8 @@
 users:
+  - id: 0000-0002-0946-5440
+    photo: pfp-cortesi-agostino.png
+    from: 1980-01-01
+    to: today
   - id: 0000-0002-4678-933X
     photo: pfp-ferrara-pietro.png
     from: 2019-01-01

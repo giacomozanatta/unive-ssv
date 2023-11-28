@@ -5,10 +5,25 @@ title: People
 
 <div class="div-person-table">
 	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-cortesi-agostino.png"/>
+		<div class="div-person-table-multicol">
+			<h3>Agostino Cortesi</h3>
+			<h5>Full Professor @ Università Ca' Foscari Venezia</h5>
+			<br/>
+			Website: <a href="http://www.unive.it/persone/cortesi">http://www.unive.it/persone/cortesi</a>
+		</div>
+	</div>
+</div>
+Full professor of Computer Science at Ca' Foscari Univ. of  Venice, Italy.  The research interests mainly focus on static analysis techniques, with particular emphasis on abstract interpretation. Some of Agostino's papers appeared in the proceedings of top conferences (ACM PLDI, ACM POPL, IEEE LICS, SAS, ICALP, ECOOP, VMCAI, ACM SAC, etc.) and on top-level international journals (ACM TOPLAS, SCP, TCS, InfComp, SPE, COMLAN, JLP, etc.).
+He was visiting professor at ENS Paris, Ecole Polytechnique Paris, UIC Chicago, T.J.Watson IBM Research Center New York, University of Calcutta.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-ferrara-pietro.png"/>
 		<div class="div-person-table-multicol">
 			<h3>Pietro Ferrara</h3>
-			<h5>Associate Professor @ Ca' Foscari University of Venice</h5>
+			<h5>Associate Professor @ Ca' Foscari University Of Venice</h5>
 			Email: <a href="mailto:pietro.ferrara@unive.it">pietro.ferrara@unive.it</a><br/>
 			Website: <a href="https://www.dais.unive.it/~ferrara/">https://www.dais.unive.it/~ferrara/</a>
 		</div>
@@ -26,7 +41,7 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-negrini-luca.jpeg"/>
 		<div class="div-person-table-multicol">
 			<h3>Luca Negrini</h3>
-			<h5>Assistant Professor (non-tenure) @ Università Ca' Foscari Venezia</h5>
+			<h5>Assistant Professor (Non-Tenure) @ Università Ca' Foscari Venezia</h5>
 			Email: <a href="mailto:luca.negrini@unive.it">luca.negrini@unive.it</a><br/>
 			Website: <a href="https://lucaneg.github.io">https://lucaneg.github.io</a>
 		</div>
@@ -40,7 +55,7 @@ I got a Bachelor’s and Master’s degrees at the University of Verona, followe
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
 		<div class="div-person-table-multicol">
 			<h3>Giacomo Boldini</h3>
-			<h5>PhD Student @ Università Ca' Foscari Venezia</h5>
+			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
 			Email: <a href="mailto:giacomo.boldini@unive.it">giacomo.boldini@unive.it</a><br/>
 			
 		</div>
@@ -54,7 +69,7 @@ Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where hi
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-chowdhury-purbasha.jpg"/>
 		<div class="div-person-table-multicol">
 			<h3>Purbasha Chowdhury</h3>
-			<h5>PhD Student @ Università Ca' Foscari Venezia</h5>
+			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
 			Email: <a href="mailto:purbasha.chowdhury@unive.it">purbasha.chowdhury@unive.it</a><br/>
 			
 		</div>
@@ -73,7 +88,7 @@ I worked as a research fellow at Ca'Foscari University of Venice in the domain o
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-arceri-vincenzo.jpg"/>
 		<div class="div-person-table-multicol">
 			<h3>Vincenzo Arceri</h3>
-			<h5>Non-tenured Track Assistant Professor @ University of Parma</h5>
+			<h5>Non-Tenured Track Assistant Professor @ University Of Parma</h5>
 			Email: <a href="mailto:vincenzo.arceri@unipr.it">vincenzo.arceri@unipr.it</a><br/>
 			Website: <a href="https://vincenzoarceri.github.io/">https://vincenzoarceri.github.io/</a>
 		</div>
