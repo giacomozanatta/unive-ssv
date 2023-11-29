@@ -9,13 +9,12 @@ title: People
 		<div class="div-person-table-multicol">
 			<h3>Agostino Cortesi</h3>
 			<h5>Full Professor @ Università Ca' Foscari Venezia</h5>
-			<br/>
+			Email: <a href="mailto:cortesi@unive.it">cortesi@unive.it</a><br/>
 			Website: <a href="http://www.unive.it/persone/cortesi">http://www.unive.it/persone/cortesi</a>
 		</div>
 	</div>
 </div>
-Full professor of Computer Science at Ca' Foscari Univ. of  Venice, Italy.  The research interests mainly focus on static analysis techniques, with particular emphasis on abstract interpretation. Some of Agostino's papers appeared in the proceedings of top conferences (ACM PLDI, ACM POPL, IEEE LICS, SAS, ICALP, ECOOP, VMCAI, ACM SAC, etc.) and on top-level international journals (ACM TOPLAS, SCP, TCS, InfComp, SPE, COMLAN, JLP, etc.).
-He was visiting professor at ENS Paris, Ecole Polytechnique Paris, UIC Chicago, T.J.Watson IBM Research Center New York, University of Calcutta.
+Agostino Cortesi, PhD, is a full professor of Computer Science at Ca’ Foscari University, Venice, Italy. He has held the position of visiting professor at several universities and research centers, including Ecole Normale Supérieure Paris, Ecole Polytechnique Palaiseau, IBM T.J.Watson Research Center, and University of Calcutta. His main research interests concern software engineering and static analysis techniques, with particular emphasis on security issues. He has also investigated the impact of semantics-based approaches in different applicative scenarios (watermarking, relational databases, robotics, etc.). He published more than 150 papers in high level international journals (including ACM TOPLAS and IEEE TSE) and proceedings of international conferences (including ACM POPL, ACM PLDI and  IEEE LICS). His current h-index is 23 according to Scopus, and 31 according to Google Scholar. Currently, he serves as co-Editor in Chief of the book series “Services and Business Process Reengineering” published by Springer-Nature.
 <br/><br/>
 
 <div class="div-person-table">
