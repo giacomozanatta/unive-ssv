@@ -51,6 +51,23 @@ I got a Bachelor’s and Master’s degrees at the University of Verona, followe
 
 <div class="div-person-table">
 	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-olivieri-luca.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Luca Olivieri</h3>
+			<h5>Post Doc Researcher - Assistant Professor (No-Tenure Track) @ Ca' Foscari University Of Venice</h5>
+			Email: <a href="mailto:luca.olivieri@unive.it">luca.olivieri@unive.it</a><br/>
+			
+		</div>
+	</div>
+</div>
+I am a PostDoc researcher in Computer Science working in software verification based on formal methods at Ca' Foscari University of Venice. I received my Ph.D. in Computer Science, certified "Doctor Europaeus", from the University of Verona (Italy) in April 2023.
+My PhD thesis titled "Blockchain Software Verification and Optimization" was in part carried out at the University of Rennes 1 (France). I earned a B.Sc and M.Sc. in Computer Science and Engineering from the University of Verona. After my M.Sc., I was hired as a Software Engineer and Research Scientist in the R&D team of JuliaSoft/Corvallis srl from April 2018 to June 2023. In these companies, my major contribution was developing Julia, an industrial static analyzer based on abstract interpretation for Java and C#. I also contributed to integrating Julia into the CodeSonar analyzer of GrammaTech Inc. In July 2023, I joined Ca’ Foscary University of Venice and the Software and System Verification (SSV) group as a research fellow and currently I am an assistant professor (no-tenure track).
+
+My research interests include cyber security, software verification, blockchain, smart contracts, data protection, and program analysis through formal methods.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
 		<div class="div-person-table-multicol">
 			<h3>Giacomo Boldini</h3>
@@ -80,7 +97,7 @@ My master’s thesis, titled as “Incorporating Multiple Bioassay and Cross Con
 
 I worked as a research fellow at Ca'Foscari University of Venice in the domain of “Data User Security Trust” where the experiment was based on the data leakage static analysis of python scripts extracted from jupyter notebooks containing sensitive Information of public administration using static analyzer LiSA (Library for Static Analysis).
 <br/><br/>
-## Past members
+## External members
 
 <div class="div-person-table">
 	<div class="div-person-table">

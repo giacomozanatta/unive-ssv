@@ -4,6 +4,8 @@ title: Publications
 ---
 ## 2023
 
+Marco Crosara, Luca Olivieri, Fausto Spoto, Fabio Tagliaferro: _"Fungible and non-fungible tokens with snapshots in Java"_, in Cluster Computing [[DOI]](https://doi.org/10.1007/s10586-022-03756-3)
+
 Luca Olivieri, Luca Negrini, Vincenzo Arceri, Fabio Tagliaferro, Pietro Ferrara, Agostino Cortesi, Fausto Spoto: _"Information Flow Analysis for Detecting Non-Determinism in Blockchain"_, in Schloss Dagstuhl - Leibniz-Zentrum für Informatik [[DOI]](https://doi.org/10.4230/LIPICS.ECOOP.2023.23)
 
 Luca Negrini, Guruprerana Shabadi, Caterina Urban: _"Static Analysis of Data Transformations in Jupyter Notebooks"_, in Proceedings of the 12th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis [[DOI]](https://doi.org/10.1145/3589250.3596145)
