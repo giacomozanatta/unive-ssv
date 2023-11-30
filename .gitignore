@@ -7,3 +7,5 @@ _site
 /_posts/2019-11-25-welcome-to-jekyll.markdown
 /about.md
 /script/runner.sh
+/script/*.txt
+

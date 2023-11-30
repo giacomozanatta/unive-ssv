@@ -261,7 +261,7 @@ title: Publications
 			log("Adding", publication.title, "to the Publications page")
 			file.write(publication.dump())
 
-def populate_people_page(people, past_people):
+def populate_people_page(people, past_people, external_people):
 	with open('../people.md', 'w') as file:
 		file.write("""---
 layout: page
@@ -271,10 +271,14 @@ title: People
 		for person in people:
 			log("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
-		file.write('## Past members\n')
-		for person in past_people:
+		file.write('## External members\n')
+		for person in external_people:
 			log("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
+		#file.write('## Past members\n')
+		#for person in past_people:
+		#	log("Adding", person.name, person.surname, "to the People page")
+		#	file.write(person.dump())
 
 def process_user_and_add(user, people_list, publications_list):
 	person = parse_user(access_token, user)
@@ -315,16 +319,20 @@ if __name__ == '__main__':
 
 	people = list()
 	past_people = list()
+	external_people = list()
 	publications = list()
 
 	for user in data['users']:
 		process_user_and_add(user, people, publications)
 
-	for user in data['past_users']:
-		process_user_and_add(user, past_people, publications)
+	for user in data['external_users']:
+		process_user_and_add(user, external_people, publications)
+
+	#for user in data['past_users']:
+	#	process_user_and_add(user, past_people, publications)
 
 	publications = sorted(publications, key=sort_by_date)
-	populate_people_page(people, past_people)
+	populate_people_page(people, past_people, external_people)
 	populate_publications_page(reversed(publications))
 
 	# cleanup news folder

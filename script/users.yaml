@@ -19,7 +19,8 @@ users:
     photo: pfp-chowdhury-purbasha.jpg
     from: 2022-09-15
     to: today
-past_users:
+#past_users:
+external_users:
   - id: 0000-0002-5150-0393
     photo: pfp-arceri-vincenzo.jpg
     from: 2019-09-01
