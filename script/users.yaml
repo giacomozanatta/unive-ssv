@@ -11,6 +11,10 @@ users:
     photo: pfp-negrini-luca.jpeg
     from: 2019-09-15
     to: today
+  - id: 0000-0001-8074-8980
+    photo: pfp-olivieri-luca.jpg
+    from: 2023-06-01
+    to: today
   - id: 0009-0006-4741-0033
     photo: pfp-boldini-giacomo.jpg
     from: 2023-09-15
