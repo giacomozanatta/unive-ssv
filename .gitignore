@@ -1,3 +1,4 @@
+# misc
 _site
 .sass-cache
 .jekyll-metadata
@@ -6,6 +7,12 @@ _site
 /Gemfile.lock
 /_posts/2019-11-25-welcome-to-jekyll.markdown
 /about.md
+
+# utility scripts and logs
 /script/runner.sh
 /script/*.txt
 
+# the following are generated
+/news/_posts/*
+people.md
+publications.md
