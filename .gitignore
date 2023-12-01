@@ -11,8 +11,3 @@ _site
 # utility scripts and logs
 /script/runner.sh
 /script/*.txt
-
-# the following are generated
-/news/_posts/*
-people.md
-publications.md
