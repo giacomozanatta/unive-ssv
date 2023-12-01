@@ -76,10 +76,6 @@ import hashlib
 import os
 import shutil
 
-def log(*messages):
-	if verbose:
-		print(*messages)
-
 class User:
 	def __init__(self, name, surname, photo, mail, website, role, org, bio, raw_works):
 		self.name = name.title() if name is not None else None
@@ -117,22 +113,25 @@ class User:
 '''
 
 class Pub:
-	def __init__(self, title, pub_date, pub_type, where, doi, contribs):
+	def __init__(self, title, pub_date, pub_type, where, doi, url, contribs):
 		self.title = title
 		self.pub_date = pub_date
 		self.pub_type = pub_type
 		self.where = where
 		self.doi = doi
+		self.url = url
 		self.contribs = contribs
 
 	def is_out_of_date_period(self):
 		return self.pub_date is None
 
 	def has_necessary_fields(self):
-		return self.title is not None and self.pub_type is not None and self.where is not None
+		return self.title is not None
 
 	def readable_kind(self):
-		r = self.pub_type.lower().replace('_', ' ')
+		if self.pub_type is None:
+			return "article"
+		r = self.pub_type.lower().replace('_', ' ').replace('-', ' ')
 		if r == 'book':
 			r = 'book chapter'
 		elif r == 'other':
@@ -140,22 +139,31 @@ class Pub:
 		return r
 
 	def dump(self):
-		authors = ', '.join(self.contribs)
-		return f'{authors}: _"{self.title}"_, in {self.where} [[DOI]](https://doi.org/{self.doi})\n\n'
+		authors = ', '.join(self.contribs) if self.contribs is not None and len(self.contribs) > 0 else 'Missing authors'
+		venue = f' in {self.where}' if self.where is not None else ''
+		doi = f' [[DOI]](https://doi.org/{self.doi})' if self.doi is not None else ''
+		url = f' [[LINK]]({self.url})' if self.url is not None else ''
+		return f'{authors}: _"{self.title}"_,{venue}{doi}{url}\n\n'
 
 	def to_news_page(self):
-		authors = ', '.join(self.contribs)
+		authors = ', '.join(self.contribs) if self.contribs is not None and len(self.contribs) > 0 else 'missing authors'
 		kind = self.readable_kind()
 		starting_kind = kind.capitalize()
+		venue = f' in "{self.where}"' if self.where is not None else ''
+		avail = f' Available [here](https://doi.org/{self.doi}).' if self.doi is not None else (f' Available [here]({self.url}).' if self.url is not None else '')
 		return f'''---
 layout: page
-title: '{starting_kind} published in "{self.where}"'
+title: '{starting_kind} published{venue}!'
 ---
 
 <small>{{{{ page.date | date: "%-d %B %Y" }}}}</small>
 
-The {kind} "{self.title}", by {authors}, has just been published in "{self.where}"! Available [here](https://doi.org/{self.doi}).
+The {kind} "{self.title}", by {authors}, has just been published{venue}!{avail}
 '''
+
+def log(*messages):
+	if verbose:
+		print(*messages)
 
 def query_api(access_token, user_id, method, do_log=False):
 	return query_path(access_token, '/' + user_id + '/' + method, do_log)
@@ -165,7 +173,7 @@ def query_path(access_token, path, do_log=False):
 		'Accept': 'application/vnd.orcid+json',
 		'Authorization':'Bearer ' + access_token
 	}
-	response = requests.get('https://pub.orcid.org/v2.1' + path, headers=headers_dict)
+	response = requests.get('https://pub.orcid.org/v3.0' + path, headers=headers_dict)
 	if do_log:
 		log('## Result of querying', path, '##')
 		log(response.text)
@@ -192,14 +200,13 @@ def parse_user(access_token, user):
 	mail = access_field(lambda r: r['emails']['email'][0]['email'], record, 'mail')
 	website = access_field(lambda r: r['researcher-urls']['researcher-url'][0]['url']['value'], record, 'website')
 
-
 	record = query_api(access_token, user_id, 'activities')
-	role = access_field(lambda r: r['employments']['employment-summary'][0]['role-title'], record, 'role')
-	org = access_field(lambda r: r['employments']['employment-summary'][0]['organization']['name'], record, 'org')
+	role = access_field(lambda r: r['employments']['affiliation-group'][0]['summaries'][0]['employment-summary']['role-title'], record, 'role')
+	org = access_field(lambda r: r['employments']['affiliation-group'][0]['summaries'][0]['employment-summary']['organization']['name'], record, 'org')
 
 	if role is None and org is None:
 		# if no employment, this is a student
-		log('Forcing role to PhD Student')
+		log('\tForcing role to PhD Student')
 		role = 'PhD Student'
 		org = 'Università Ca\' Foscari Venezia'
 
@@ -207,23 +214,40 @@ def parse_user(access_token, user):
 	return User(name, surname, user['photo'], mail, website, role, org, bio, raw_works)
 
 def parse_work(access_token, min_date, max_date, work):
-	workrecord = query_path(access_token, access_field(lambda r: r['work-summary'][0]['path'], work, 'work path', do_log=False))
+	workrecord = query_path(access_token, access_field(lambda r: r['work-summary'][0]['path'], work, 'work path', do_log=False), do_log=False)
 	title = access_field(lambda r: r['title']['title']['value'], workrecord, 'title', do_log=False)
 	log('Processing', title)
 
-	year = int(access_field(lambda r: r['work-summary'][0]['publication-date']['year']['value'], work, 'year', default=date.today().year))
-	month = int(access_field(lambda r: r['work-summary'][0]['publication-date']['month']['value'], work, 'month', default=1))
-	day = int(access_field(lambda r: r['work-summary'][0]['publication-date']['day']['value'], work, 'day', default=1))
+	creation_raw = access_field(lambda r: r['created-date']['value'], workrecord, 'creation')
+	year_raw = access_field(lambda r: r['publication-date']['year']['value'], workrecord, 'year')
+	month_raw = access_field(lambda r: r['publication-date']['month']['value'], workrecord, 'month')
+	day_raw = access_field(lambda r: r['publication-date']['day']['value'], workrecord, 'day')
 
-	pub_date = date(year, month, day)
-	if pub_date < min_date or pub_date > max_date:
+	year = int(year_raw) if year_raw is not None else None
+	month = int(month_raw) if month_raw is not None else 1
+	day = int(day_raw) if day_raw is not None else 1
+
+	if year is not None:
+		pub_date = date(year, month, day)
+		if pub_date < min_date or pub_date > max_date:
+			# exclude the publication
+			return Pub(None, None, None, None, None, None, None)
+	elif creation_raw is not None:
+		log('\tMissing date, using creation timestamp instead')
+		# according to the docs, creation_raw should contain a formatted ISO timestamp
+		# but it seems that it instead contains the milliseconds relative to EPOCH.
+		# should this stop working, we need to investigate a new workaround
+		pub_date = date(1970, 1, 1) + timedelta(milliseconds=creation_raw)
+		log('\t\tProduced date: ' + str(date))
+	else:
 		# exclude the publication
-		return Pub(None, None, None, None, None, None)
+		return Pub(None, None, None, None, None, None, None)
 
 	pub_type = access_field(lambda r: r['type'], workrecord, 'type')
 	where = access_field(lambda r: r['journal-title']['value'], workrecord, 'venue')
 	if where is not None:
 		where = where.replace("'", "")
+	url = access_field(lambda r: r['url']['value'], workrecord, 'url')
 	doi = None
 	for extid in access_field(lambda r: r['external-ids']['external-id'], workrecord, 'external ids', default=list(), do_log=False):
 		if access_field(lambda r: r['external-id-type'], extid, 'external id type', do_log=False) == 'doi':
@@ -232,7 +256,7 @@ def parse_work(access_token, min_date, max_date, work):
 	contribs = list()
 	for contributor in access_field(lambda r: r['contributors']['contributor'], workrecord, 'contributors', default=list(), do_log=False):
 		contribs += [access_field(lambda r: r['credit-name']['value'], contributor, 'contributor name')]
-	return Pub(title, pub_date, pub_type, where, doi, contribs)
+	return Pub(title, pub_date, pub_type, where, doi, url, contribs)
 
 def add_news(publication):
 	name_hash = hashlib.md5(publication.title.encode('utf-8')).hexdigest()
@@ -271,14 +295,16 @@ title: People
 		for person in people:
 			log("Adding", person.name, person.surname, "to the People page")
 			file.write(person.dump())
-		file.write('## External members\n')
-		for person in external_people:
-			log("Adding", person.name, person.surname, "to the People page")
-			file.write(person.dump())
-		#file.write('## Past members\n')
-		#for person in past_people:
-		#	log("Adding", person.name, person.surname, "to the People page")
-		#	file.write(person.dump())
+		if len(external_people) > 0:
+			file.write('## External members\n')
+			for person in external_people:
+				log("Adding", person.name, person.surname, "to the People page")
+				file.write(person.dump())
+		if len(past_people) > 0:
+			file.write('## Past members\n')
+			for person in past_people:
+				log("Adding", person.name, person.surname, "to the People page")
+				file.write(person.dump())
 
 def process_user_and_add(user, people_list, publications_list):
 	person = parse_user(access_token, user)
