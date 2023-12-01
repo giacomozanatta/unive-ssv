@@ -7,6 +7,10 @@ users:
     photo: pfp-ferrara-pietro.png
     from: 2019-01-01
     to: today
+  - id: 0000-0002-6905-2736
+    photo: pfp-spano-alvise.jpg
+    from: 2019-09-15
+    to: today
   - id: 0000-0002-8818-7767
     photo: pfp-perezgort-maikel.jpg
     from: 2019-09-15
