@@ -7,6 +7,10 @@ users:
     photo: pfp-ferrara-pietro.png
     from: 2019-01-01
     to: today
+  - id: 0000-0002-8818-7767
+    photo: pfp-perezgort-maikel.jpg
+    from: 2019-09-15
+    to: today
   - id: 0000-0001-9930-8854
     photo: pfp-negrini-luca.jpeg
     from: 2019-09-15
