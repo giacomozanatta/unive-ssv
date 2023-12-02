@@ -18,59 +18,57 @@ Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu
 
 Luca Olivieri, Thomas Jensen, Luca Negrini, Fausto Spoto: _"MichelsonLiSA: A Static Analyzer for Tezos"_, in 2023 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops) [[DOI]](https://doi.org/10.1109/percomworkshops56833.2023.10150247) [[LINK]](http://dx.doi.org/10.1109/percomworkshops56833.2023.10150247)
 
-Maikel Lázaro Pérez Gort, Martina Olliaro, Agostino Cortesi: _"Relational data watermarking resilience to brute force attacks in untrusted environments"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2022.118713) [[LINK]](https://doi.org/10.1016/j.eswa.2022.118713)
-
 Calzavara, S., Ferrara, P., Lucchese, C.: _"Certifying machine learning models against evasion attacks by program analysis"_, in Journal of Computer Security [[DOI]](https://doi.org/10.3233/JCS-210133) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85164535638&partnerID=MN8TOARS)
 
 Das, S., Deb, N., Cortesi, A., Chaki, N.: _"Zero-shot Learning for Named Entity Recognition in Software Specification Documents"_, in Proceedings of the IEEE International Conference on Requirements Engineering [[DOI]](https://doi.org/10.1109/RE57278.2023.00019) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85174419816&partnerID=MN8TOARS)
 
+Pérez Gort, M.L., Olliaro, M., Cortesi, A.: _"Relational data watermarking resilience to brute force attacks in untrusted environments"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2022.118713) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85138046698&partnerID=MN8TOARS)
+
+Olliaro, M., Arceri, V., Cortesi, A., Ferrara, P.: _"Lifting String Analysis Domains"_, in Intelligent Systems Reference Library [[DOI]](https://doi.org/10.1007/978-981-19-9601-6_7) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85171442830&partnerID=MN8TOARS)
+
+Negrini, L., Ferrara, P., Arceri, V., Cortesi, A.: _"LiSA: A Generic Framework for Multilanguage Static Analysis"_, in Intelligent Systems Reference Library [[DOI]](https://doi.org/10.1007/978-981-19-9601-6_2) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85171468841&partnerID=MN8TOARS)
+
+Olivieri, L., Arceri, V., Ferrara, P., Spoto, F., Negrini, L., Tagliaferro, F., Cortesi, A.: _"Information Flow Analysis for Detecting Non-Determinism in Blockchain"_, in Leibniz International Proceedings in Informatics, LIPIcs [[DOI]](https://doi.org/10.4230/LIPIcs.ECOOP.2023.23) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85168869129&partnerID=MN8TOARS)
+
 Pérez Gort, M.L., Olliaro, M., Cortesi, A.: _"Empirical Analysis of the Impact of Queries on Watermarked Textual Relational Databases"_, in SSRN [[DOI]](https://doi.org/10.2139/ssrn.4477181) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85162001439&partnerID=MN8TOARS)
 
-Souvick Das, Novarun Deb, Nabendu Chaki, Agostino Cortesi: _"Driving the Technology Value Stream by Analyzing App Reviews"_, in IEEE Transactions on Software Engineering [[DOI]](https://doi.org/10.1109/TSE.2023.3270708) [[LINK]](https://doi.org/10.1109/TSE.2023.3270708)
+Das, S., Deb, N., Chaki, N., Cortesi, A.: _"Driving the Technology Value Stream by Analyzing App Reviews"_, in IEEE Transactions on Software Engineering [[DOI]](https://doi.org/10.1109/TSE.2023.3270708) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85159794537&partnerID=MN8TOARS)
+
+Roy, M., Das, S., Deb, N., Cortesi, A., Chaki, R., Chaki, N.: _"Correlating contexts and NFR conflicts from event logs"_, in Software and Systems Modeling [[DOI]](https://doi.org/10.1007/s10270-023-01087-4) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85148895255&partnerID=MN8TOARS)
+
+Halder, R., Alam, M.I., Fajge, A.M., Singh, N.K., Cortesi, A.: _"Analyzing information flow in solidity smart contracts"_, in Distributed Computing to Blockchain: Architecture, Technology, and Applications [[DOI]](https://doi.org/10.1016/B978-0-323-96146-2.00024-3) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85160753944&partnerID=MN8TOARS)
 
 Das, S., Deb, N., Chaki, N., Cortesi, A.: _"An Annexure to the Paper “Driving the Technology Value Stream by Analyzing App Reviews”"_, in arXiv [[DOI]](https://doi.org/10.48550/arXiv.2303.04519) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85150608178&partnerID=MN8TOARS)
 
-Deepanjan Mitra, Agostino Cortesi, Nabendu Chaki: _"A Two-Hop Neighborhood Based Berserk Detection Algorithm for Probabilistic Model of Consensus in Distributed Ledger Systems"_, [[DOI]](https://doi.org/10.1007/978-3-031-41456-5_29) [[LINK]](https://doi.org/10.1007/978-3-031-41456-5_29)
+Krishnasrija, R., Mandal, A.K., Cortesi, A.: _"A lightweight mutual and transitive authentication mechanism for IoT network"_, in Ad Hoc Networks [[DOI]](https://doi.org/10.1016/j.adhoc.2022.103003) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85140137175&partnerID=MN8TOARS)
 
-Missing authors: _"Lifting String Analysis Domains"_, [[DOI]](https://doi.org/10.1007/978-981-19-9601-6_7) [[LINK]](https://iris.unive.it/handle/10278/5031341)
-
-Missing authors: _"LiSA: A Generic Framework for Multilanguage Static Analysis"_, [[DOI]](https://doi.org/10.1007/978-981-19-9601-6_2) [[LINK]](https://iris.unive.it/handle/10278/5031340)
-
-Missing authors: _"Information Flow Analysis for Detecting Non-Determinism in Blockchain"_, [[DOI]](https://doi.org/10.4230/LIPIcs.ECOOP.2023.23) [[LINK]](https://iris.unive.it/handle/10278/5020965)
-
-Missing authors: _"Correlating contexts and NFR conflicts from event logs"_, [[DOI]](https://doi.org/10.1007/s10270-023-01087-4) [[LINK]](https://iris.unive.it/handle/10278/5031421)
-
-Missing authors: _"Analyzing information flow in solidity smart contracts"_, [[DOI]](https://doi.org/10.1016/B978-0-323-96146-2.00024-3) [[LINK]](https://iris.unive.it/handle/10278/5020160)
-
-Missing authors: _"A lightweight mutual and transitive authentication mechanism for IoT network"_, [[DOI]](https://doi.org/10.1016/j.adhoc.2022.103003) [[LINK]](https://iris.unive.it/handle/10278/5017242)
+Mitra, D., Cortesi, A., Chaki, N.: _"A Two-Hop Neighborhood Based Berserk Detection Algorithm for Probabilistic Model of Consensus in Distributed Ledger Systems"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-031-41456-5_29) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85172418851&partnerID=MN8TOARS)
 
 ## 2022
-
-Santanu Roy, Agostino Cortesi, Soumya Sen: _"Context-aware OLAP for textual data warehouses"_, in International Journal of Information Management Data Insights [[DOI]](https://doi.org/10.1016/j.jjimei.2022.100129) [[LINK]](https://doi.org/10.1016/j.jjimei.2022.100129)
-
-Martina Olliaro, Maikel Lázaro Pérez Gort, Agostino Cortesi: _"Empirical analysis of the impact of queries on watermarked relational databases"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2022.117491) [[LINK]](https://doi.org/10.1016/j.eswa.2022.117491)
 
 Missing authors: _"Reducing multiple occurrences of meta-mark selection in relational data watermarking"_, in IEEE Access [[DOI]](https://doi.org/10.1109/access.2022.3182099) [[LINK]](http://dx.doi.org/10.1109/access.2022.3182099)
 
 Antonio Panfili, Alvise Spanò, Agostino Cortesi: _"A Wearable System for Jump Detection in Inline Figure Skating"_, in Sensors [[DOI]](https://doi.org/10.3390/s22041650) [[LINK]](https://doi.org/10.3390/s22041650)
 
-Maikel Lazaro Perez Gort, Martina Olliaro, Agostino Cortesi: _"Reducing Multiple Occurrences of Meta-Mark Selection in Relational Data Watermarking"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2022.3182099) [[LINK]](https://doi.org/10.1109/ACCESS.2022.3182099)
+Arceri, V., Olliaro, M., Cortesi, A., Ferrara, P.: _"Relational String Abstract Domains"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-94583-1_2) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85124308681&partnerID=MN8TOARS)
+
+Gort, M.L.P., Olliaro, M., Cortesi, A.: _"Reducing Multiple Occurrences of Meta-Mark Selection in Relational Data Watermarking"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2022.3182099) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85132763783&partnerID=MN8TOARS)
+
+Cortesi, A., Berionni, C., Veeckman, C., Leonardi, C., Schiavo, G., Zancanaro, M., Cescon, M., Sangiuliano, M., Tampakis, D., Falelakis, M.: _"Families_Share: digital and social innovation for work–life balance"_, in Digital Policy, Regulation and Governance [[DOI]](https://doi.org/10.1108/DPRG-02-2021-0028) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85126040557&partnerID=MN8TOARS)
+
+Olivieri, L., Tagliaferro, F., Arceri, V., Ruaro, M., Negrini, L., Cortesi, A., Ferrara, P., Spoto, F., Talin, E.: _"Ensuring determinism in blockchain software with GoLiSA: an industrial experience report"_, in SOAP 2022 - Proceedings of the 11th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis, co-located with PLDI 2022 [[DOI]](https://doi.org/10.1145/3520313.3534658) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85146239568&partnerID=MN8TOARS)
+
+Olliaro, M., Pérez Gort, M.L., Cortesi, A.: _"Empirical analysis of the impact of queries on watermarked relational databases"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2022.117491) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85130431255&partnerID=MN8TOARS)
+
+Roy, S., Cortesi, A., Sen, S.: _"Context-aware OLAP for textual data warehouses"_, in International Journal of Information Management Data Insights [[DOI]](https://doi.org/10.1016/j.jjimei.2022.100129) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85140027221&partnerID=MN8TOARS)
+
+Mitra, D., Cortesi, A., Chaki, N.: _"ALEA: An Anonymous Leader Election Algorithm for Synchronous Distributed Systems"_, in Lecture Notes in Networks and Systems [[DOI]](https://doi.org/10.1007/978-3-030-81523-3_5) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85115188573&partnerID=MN8TOARS)
+
+Pérez Gort, M.L., Olliaro, M., Cortesi, A.: _"A Quantile-Based Watermarking Approach for Distortion Minimization"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-031-08147-7_11) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85132986279&partnerID=MN8TOARS)
 
 Krishnasrija, R., Mandal, A.Kr., Cortesi, A.: _"A Lightweight Mutual and Transitive Authentication Mechanism for Iot Network"_, in SSRN [[DOI]](https://doi.org/10.2139/ssrn.4090360) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85176980108&partnerID=MN8TOARS)
 
-Missing authors: _"Relational String Abstract Domains"_, [[DOI]](https://doi.org/10.1007/978-3-030-94583-1_2) [[LINK]](https://iris.unive.it/handle/10278/3754133)
-
-Missing authors: _"Families_Share: digital and social innovation for work–life balance"_, [[DOI]](https://doi.org/10.1108/DPRG-02-2021-0028) [[LINK]](https://iris.unive.it/handle/10278/3754131)
-
-Missing authors: _"Ensuring determinism in blockchain software with GoLiSA: an industrial experience report"_, [[DOI]](https://doi.org/10.1145/3520313.3534658) [[LINK]](https://iris.unive.it/handle/10278/5004420)
-
-Missing authors: _"ALEA: An Anonymous Leader Election Algorithm for Synchronous Distributed Systems"_, [[DOI]](https://doi.org/10.1007/978-3-030-81523-3_5) [[LINK]](https://iris.unive.it/handle/10278/3754134)
-
-Missing authors: _"A Quantile-Based Watermarking Approach for Distortion Minimization"_, [[DOI]](https://doi.org/10.1007/978-3-031-08147-7_11) [[LINK]](https://iris.unive.it/handle/10278/5017245)
-
 ## 2021
-
-Manali Chakraborty, Alvise Spanò, Agostino Cortesi: _"Geographic location based secure, dynamic and opportunistic RPL for distributed networks"_, in Ad Hoc Networks [[DOI]](https://doi.org/10.1016/j.adhoc.2021.102689) [[LINK]](https://doi.org/10.1016/j.adhoc.2021.102689)
 
 Vincenzo Arceri, Isabella Mastroeni: _"Improving Dynamic Code Analysis by Code Abstraction"_, in Electronic Proceedings in Theoretical Computer Science [[DOI]](https://doi.org/10.4204/eptcs.341.2) [[LINK]](http://dx.doi.org/10.4204/eptcs.341.2)
 
@@ -84,43 +82,39 @@ Ferrara, P., Olivieri, L., Spoto, F.: _"Static Privacy Analysis by Flow Reconstr
 
 Cortesi, A., Chaki, N., Chaki, R.: _"Verifiability in Systems and Data Engineering: Preface by the Special Issue Editors"_, in Innovations in Systems and Software Engineering [[DOI]](https://doi.org/10.1007/s11334-021-00405-7) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85107274138&partnerID=MN8TOARS)
 
-Missing authors: _"Twinning Automata and Regular Expressions for String Static Analysis"_, [[DOI]](https://doi.org/10.1007/978-3-030-67067-2_13) [[LINK]](https://iris.unive.it/handle/10278/3736434)
+Negrini, L., Arceri, V., Ferrara, P., Cortesi, A.: _"Twinning Automata and Regular Expressions for String Static Analysis"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-67067-2_13) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85101551675&partnerID=MN8TOARS)
 
-Missing authors: _"Static analysis for dummies: experiencing LiSA"_, [[DOI]](https://doi.org/10.1145/3460946.3464316) [[LINK]](https://iris.unive.it/handle/10278/3741476)
+Ferrara, P., Negrini, L., Arceri, V., Cortesi, A.: _"Static analysis for dummies: Experiencing LiSA"_, in SOAP 2021 - Proceedings of the 10th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis, co-located with PLDI 2021 [[DOI]](https://doi.org/10.1145/3460946.3464316) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85110105851&partnerID=MN8TOARS)
 
-Missing authors: _"Static analysis for discovering IoT vulnerabilities"_, [[DOI]](https://doi.org/10.1007/s10009-020-00592-x) [[LINK]](https://iris.unive.it/handle/10278/3734701)
+Ferrara, P., Mandal, A.K., Cortesi, A., Spoto, F.: _"Static analysis for discovering IoT vulnerabilities"_, in International Journal on Software Tools for Technology Transfer [[DOI]](https://doi.org/10.1007/s10009-020-00592-x) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85096536503&partnerID=MN8TOARS)
 
-Missing authors: _"Skyline computation over multiple points and dimensions"_, [[DOI]](https://doi.org/10.1007/s11334-020-00376-1) [[LINK]](https://iris.unive.it/handle/10278/3734894)
+Ghosh, P., Sen, S., Cortesi, A.: _"Skyline computation over multiple points and dimensions"_, in Innovations in Systems and Software Engineering [[DOI]](https://doi.org/10.1007/s11334-020-00376-1) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85098715540&partnerID=MN8TOARS)
 
-Missing authors: _"Sentence Embedding Models for Similarity Detection of Software Requirements"_, [[DOI]](https://doi.org/10.1007/s42979-020-00427-1) [[LINK]](https://iris.unive.it/handle/10278/3736435)
+Das, S., Deb, N., Cortesi, A., Chaki, N.: _"Sentence Embedding Models for Similarity Detection of Software Requirements"_, in SN Computer Science [[DOI]](https://doi.org/10.1007/s42979-020-00427-1) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85129699157&partnerID=MN8TOARS)
 
-Missing authors: _"Semantic-driven watermarking of relational textual databases"_, [[DOI]](https://doi.org/10.1016/j.eswa.2020.114013) [[LINK]](https://iris.unive.it/handle/10278/3734700)
+Pérez Gort, M.L., Olliaro, M., Cortesi, A., Feregrino Uribe, C.: _"Semantic-driven watermarking of relational textual databases"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2020.114013) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85095990557&partnerID=MN8TOARS)
 
-Missing authors: _"Requirement-oriented risk management for incremental software development"_, [[DOI]](https://doi.org/10.1007/s11334-021-00406-6) [[LINK]](https://iris.unive.it/handle/10278/3754138)
+Roy, M., Deb, N., Cortesi, A., Chaki, R., Chaki, N.: _"Requirement-oriented risk management for incremental software development"_, in Innovations in Systems and Software Engineering [[DOI]](https://doi.org/10.1007/s11334-021-00406-6) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85108363473&partnerID=MN8TOARS)
 
-Missing authors: _"NFR-aware prioritization of software requirements"_, [[DOI]](https://doi.org/10.1002/sys.21572) [[LINK]](https://iris.unive.it/handle/10278/3754140)
+Roy, M., Deb, N., Cortesi, A., Chaki, R., Chaki, N.: _"NFR-aware prioritization of software requirements"_, in Systems Engineering [[DOI]](https://doi.org/10.1002/sys.21572) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85103587611&partnerID=MN8TOARS)
 
-Missing authors: _"Dynamic Prioritization of Software Requirements for Incremental Software Development"_, [[DOI]](https://doi.org/10.1007/978-981-16-4294-4_8) [[LINK]](https://iris.unive.it/handle/10278/3754143)
+Salvia, R., Cortesi, A., Ferrara, P., Spoto, F.: _"Intents Analysis of Android Apps for Confidentiality Leakage Detection"_, in Advances in Intelligent Systems and Computing [[DOI]](https://doi.org/10.1007/978-981-15-5747-7_4) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85089235143&partnerID=MN8TOARS)
 
-Roy, S., Shit, B., Sen, S., Agostino Cortesi: _"Construction of Materialized Views in Non-Binary Data Space"_, [[DOI]](https://doi.org/10.1007/978-981-16-4294-4_7) [[LINK]](https://iris.unive.it/handle/10278/3754142)
+Chakraborty, M., Spanò, A., Cortesi, A.: _"Geographic location based secure, dynamic and opportunistic RPL for distributed networks"_, in Ad Hoc Networks [[DOI]](https://doi.org/10.1016/j.adhoc.2021.102689) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85116591082&partnerID=MN8TOARS)
 
-Missing authors: _"Construction and distribution of materialized views in Non-binary data space"_, [[DOI]](https://doi.org/10.1007/s11334-021-00404-8) [[LINK]](https://iris.unive.it/handle/10278/3754139)
+Roy, M., Deb, N., Cortesi, A., Chaki, R., Chaki, N.: _"Dynamic Prioritization of Software Requirements for Incremental Software Development"_, in Lecture Notes in Networks and Systems [[DOI]](https://doi.org/10.1007/978-981-16-4294-4_8) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85116341918&partnerID=MN8TOARS)
 
-Missing authors: _"Completeness of string analysis for dynamic languages"_, [[DOI]](https://doi.org/10.1016/j.ic.2021.104791) [[LINK]](https://iris.unive.it/handle/10278/3754136)
+Roy, S., Shit, B., Sen, S., Cortesi, A.: _"Construction of Materialized Views in Non-Binary Data Space"_, in Lecture Notes in Networks and Systems [[DOI]](https://doi.org/10.1007/978-981-16-4294-4_7) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85116383460&partnerID=MN8TOARS)
 
-Missing authors: _"CARO: A Conflict-Aware Requirement Ordering Tool for DevOps"_, [[DOI]](https://doi.org/10.1109/RE51729.2021.00061) [[LINK]](https://iris.unive.it/handle/10278/3754141)
+Roy, S., Shit, B., Sen, S., Cortesi, A.: _"Construction and distribution of materialized views in Non-binary data space"_, in Innovations in Systems and Software Engineering [[DOI]](https://doi.org/10.1007/s11334-021-00404-8) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85107282325&partnerID=MN8TOARS)
+
+Arceri, V., Olliaro, M., Cortesi, A., Mastroeni, I.: _"Completeness of string analysis for dynamic languages"_, in Information and Computation [[DOI]](https://doi.org/10.1016/j.ic.2021.104791) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85114108708&partnerID=MN8TOARS)
+
+Roy, M., Deb, N., Cortesi, A., Chaki, R., Chaki, N.: _"CARO: A Conflict-Aware Requirement Ordering Tool for DevOps"_, in Proceedings of the IEEE International Conference on Requirements Engineering [[DOI]](https://doi.org/10.1109/RE51729.2021.00061) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85123192353&partnerID=MN8TOARS)
 
 ## 2020
 
-Henrich Lauko, Martina Olliaro, Agostino Cortesi, Petr Roc̆kai: _"Abstracting Strings for Model Checking of C Programs"_, in Applied Sciences [[DOI]](https://doi.org/10.3390/app10217853) [[LINK]](https://doi.org/10.3390/app10217853)
-
-Pietro Ferrara, Agostino Cortesi, Fausto Spoto: _"From CIL to Java bytecode: Semantics-based translation for static analysis leveraging"_, in Science of Computer Programming [[DOI]](https://doi.org/10.1016/j.scico.2020.102392) [[LINK]](https://doi.org/10.1016/j.scico.2020.102392)
-
 Vincenzo Arceri, Isabella Mastroeni, Sunyi Xu: _"Static Analysis for ECMAScript String Manipulation Programs"_, in Applied Sciences [[DOI]](https://doi.org/10.3390/app10103525) [[LINK]](https://www.mdpi.com/2076-3417/10/10/3525)
-
-Angshuman Jana, Raju Halder, Kalahasti Venkata Abhishekh, Sanjeevini Devi Ganni, Agostino Cortesi: _"Extending Abstract Interpretation to Dependency Analysis of Database Applications"_, in IEEE Transactions on Software Engineering [[DOI]](https://doi.org/10.1109/TSE.2018.2861707) [[LINK]](https://doi.org/10.1109/TSE.2018.2861707)
-
-Alvise Spanò, Agostino Cortesi: _"Legodroid: A Type-Driven Library for Android and LEGO Mindstorms Interoperability"_, in Sensors [[DOI]](https://doi.org/10.3390/s20071926) [[LINK]](https://doi.org/10.3390/s20071926)
 
 Missing authors: _"An Abstract Domain for Objects in Dynamic Programming Languages"_, in Lecture Notes in Computer Science [[DOI]](https://doi.org/10.1007/978-3-030-54997-8_9) [[LINK]](http://dx.doi.org/10.1007/978-3-030-54997-8_9)
 
@@ -138,55 +132,55 @@ Ferrara, P., Olivieri, L., Spoto, F.: _"BackFlow: Backward Context-Sensitive Flo
 
 Dieber, B., White, R., Taurer, S., Breiling, B., Caiazza, G., Christensen, H., Cortesi, A.: _"Penetration Testing ROS"_, in Studies in Computational Intelligence [[DOI]](https://doi.org/10.1007/978-3-030-20190-6_8) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85068232513&partnerID=MN8TOARS)
 
-Maikel Lazaro Perez Gort, Claudia Feregrino-Uribe, Agostino Cortesi, Felix Fernandez-Pena: _"A Double Fragmentation Approach for Improving Virtual Primary Key-Based Watermark Synchronization"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2020.2979659) [[LINK]](https://doi.org/10.1109/ACCESS.2020.2979659)
+Spanò, A., Cortesi, A.: _"Legodroid: A type-driven library for android and lego mindstorms interoperability"_, in Sensors (Switzerland) [[DOI]](https://doi.org/10.3390/s20071926) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85082791108&partnerID=MN8TOARS)
 
-Missing authors: _"Intents Analysis of Android Apps for Confidentiality Leakage Detection"_, [[DOI]](https://doi.org/10.1007/978-981-15-5747-7_4) [[LINK]](https://iris.unive.it/handle/10278/3734702)
+Deb, N., Roy, M., Chaki, N., Cortesi, A.: _"Generation of Safety and Liveness Complaint Automata from Goal Model Specifications"_, in Proceedings - 16th European Dependable Computing Conference, EDCC 2020 [[DOI]](https://doi.org/10.1109/EDCC51268.2020.00029) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85097153962&partnerID=MN8TOARS)
 
-Missing authors: _"Generation of Safety and Liveness Complaint Automata from Goal Model Specifications"_, [[DOI]](https://doi.org/10.1109/EDCC51268.2020.00029) [[LINK]](https://iris.unive.it/handle/10278/3734699)
+Ferrara, P., Cortesi, A., Spoto, F.: _"From CIL to Java bytecode: Semantics-based translation for static analysis leveraging"_, in Science of Computer Programming [[DOI]](https://doi.org/10.1016/j.scico.2020.102392) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85078878251&partnerID=MN8TOARS)
 
-Missing authors: _"Cross-Program Taint Analysis for IoT Systems"_, [[DOI]](https://doi.org/10.1145/3341105.3373924) [[LINK]](https://iris.unive.it/handle/10278/3720937)
+Jana, A., Halder, R., Abhishekh, K.V., Ganni, S.D., Cortesi, A.: _"Extending Abstract Interpretation to Dependency Analysis of Database Applications"_, in IEEE Transactions on Software Engineering [[DOI]](https://doi.org/10.1109/TSE.2018.2861707) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85050989999&partnerID=MN8TOARS)
 
-Missing authors: _"Advanced Computing and Systems for Security - Volume Twelve"_, [[DOI]](https://doi.org/10.1007/978-981-15-2930-6) [[LINK]](https://iris.unive.it/handle/10278/3724431)
+Mandal, A., Ferrara, P., Khlyebnikov, Y., Cortesi, A., Spoto, F.: _"Cross-program taint analysis for IoT systems"_, in Proceedings of the ACM Symposium on Applied Computing [[DOI]](https://doi.org/10.1145/3341105.3373924) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85083026576&partnerID=MN8TOARS)
 
-Missing authors: _"Advanced Computing and Systems for Security - Volume Ten"_, [[DOI]](https://doi.org/10.1016/B978-044482521-6/50000-0) [[LINK]](https://iris.unive.it/handle/10278/3724429)
+Lauko, H., Olliaro, M., Cortesi, A., Ročckai, P.: _"Abstracting strings for model checking of C programs"_, in Applied Sciences (Switzerland) [[DOI]](https://doi.org/10.3390/app10217853) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85095681850&partnerID=MN8TOARS)
+
+Pérez Gort, M.L., Feregrino-Uribe, C., Cortesi, A., Fernández-Peña, F.: _"A Double Fragmentation Approach for Improving Virtual Primary Key-Based Watermark Synchronization"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2020.2979659) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85083306592&partnerID=MN8TOARS)
 
 ## 2019
 
-Maikel Lázaro Pérez Gort, Claudia Feregrino-Uribe, Agostino Cortesi, Félix Fernández-Peña: _"HQR-Scheme: A High Quality and resilient virtual primary key generation approach for watermarking relational data"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2019.06.058) [[LINK]](https://doi.org/10.1016/j.eswa.2019.06.058)
-
-Ruffin White, Gianluca Caiazza, Agostino Cortesi, Young Im Cho, Henrik I. Christensen: _"Black Block Recorder: Immutable Black Box Logging for Robots via Blockchain"_, in IEEE Robotics and Automation Letters [[DOI]](https://doi.org/10.1109/LRA.2019.2928780) [[LINK]](https://doi.org/10.1109/LRA.2019.2928780)
-
-Amit Kr Mandal, Federica Panarotto, Agostino Cortesi, Pietro Ferrara, Fausto Spoto: _"Static analysis of Android Auto infotainment and on‐board diagnostics II apps"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.2698) [[LINK]](https://doi.org/10.1002/spe.2698)
-
-Swagatika Sahoo, Akshay M. Fajge, Raju Halder, Agostino Cortesi: _"A Hierarchical and Abstraction-Based Blockchain Model"_, in Applied Sciences [[DOI]](https://doi.org/10.3390/app9112343) [[LINK]](https://doi.org/10.3390/app9112343)
+Maria Sangiuliano, Agostino Cortesi: _"Institutional Change for Gender Equality in Research Lesson Learned from the Field"_, [[DOI]](https://doi.org/10.30687/978-88-6969-334-2) [[LINK]](https://doi.org/10.30687/978-88-6969-334-2)
 
 Spoto, F., Burato, E., Ernst, M.D., Ferrara, P., Lovato, A., Macedonio, D., Spiridon, C.: _"Static identification of injection attacks in Java"_, in ACM Transactions on Programming Languages and Systems [[DOI]](https://doi.org/10.1145/3332371) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85068440875&partnerID=MN8TOARS)
 
+Spanò, A., Cortesi, A., Zausa, G.: _"Type-driven cross-programming for android and LEGO Mindstorms interoperability"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-28957-7_17) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85072989915&partnerID=MN8TOARS)
+
+Mandal, A.K., Cortesi, A., Sarkar, A., Chaki, N.: _"Things as a service: Service model for IoT"_, in IEEE International Conference on Industrial Informatics (INDIN) [[DOI]](https://doi.org/10.1109/INDIN41052.2019.8972241) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85079062842&partnerID=MN8TOARS)
+
+Cortesi, A., Lauko, H., Olliaro, M., Ročkai, P.: _"String Abstraction for Model Checking of C Programs"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-30923-7_5) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85075586643&partnerID=MN8TOARS)
+
+Mandal, A.K., Panarotto, F., Cortesi, A., Ferrara, P., Spoto, F.: _"Static analysis of Android Auto infotainment and on-board diagnostics II apps"_, in Software - Practice and Experience [[DOI]](https://doi.org/10.1002/spe.2698) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85066079071&partnerID=MN8TOARS)
+
 White, R., Caiazza, G., Christensen, H., Cortesi, A.: _"SROS1: Using and Developing Secure ROS1 Systems"_, in Studies in Computational Intelligence [[DOI]](https://doi.org/10.1007/978-3-319-91590-6_11) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85049669395&partnerID=MN8TOARS)
+
+Bhattacharya, A., Choudhury, S., Cortesi, A.: _"Replaceability and negotiation in a cloud service ecosystem"_, in Journal of Cloud Computing [[DOI]](https://doi.org/10.1186/s13677-019-0137-8) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85073059334&partnerID=MN8TOARS)
+
+Gort, M.L.P., Olliaro, M., Feregrino-Uribe, C., Cortesi, A.: _"Preventing Additive Attacks to Relational Database Watermarking"_, in Lecture Notes in Business Information Processing [[DOI]](https://doi.org/10.1007/978-3-030-37632-1_12) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85077490924&partnerID=MN8TOARS)
 
 White, R., Caiazza, G., Jiang, C., Ou, X., Yang, Z., Cortesi, A., Christensen, H.: _"Network Reconnaissance and Vulnerability Excavation of Secure DDS Systems"_, in Proceedings - 4th IEEE European Symposium on Security and Privacy Workshops, EUROS and PW 2019 [[DOI]](https://doi.org/10.1109/EuroSPW.2019.00013) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85071920078&partnerID=MN8TOARS)
 
 Cortesi, A., Tripp, O.: _"Introduction to the special issue:SAAP-2017 (Static Analysis of Android Apps: Security and Privacy)"_, in Journal of Computer Languages [[DOI]](https://doi.org/10.1016/j.cola.2019.03.005) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85065039622&partnerID=MN8TOARS)
 
+Pérez Gort, M.L., Feregrino-Uribe, C., Cortesi, A., Fernández-Peña, F.: _"HQR-Scheme: A High Quality and resilient virtual primary key generation approach for watermarking relational data"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2019.06.058) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85069746251&partnerID=MN8TOARS)
+
+Chakraborty, M., Spano, A., Cortesi, A.: _"Geographic location based dynamic and opportunistic RPL for distributed networks"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-28957-7_11) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85072962924&partnerID=MN8TOARS)
+
 Caiazza, G., White, R., Cortesi, A.: _"Enhancing Security in ROS"_, in Advances in Intelligent Systems and Computing [[DOI]](https://doi.org/10.1007/978-981-13-3702-4_1) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85061113288&partnerID=MN8TOARS)
 
-Missing authors: _"Type-driven cross-programming for android and LEGO Mindstorms interoperability"_, [[DOI]](https://doi.org/10.1007/978-3-030-28957-7_17) [[LINK]](https://iris.unive.it/handle/10278/3721102)
+Arceri, V., Olliaro, M., Cortesi, A., Mastroeni, I.: _"Completeness of Abstract Domains for String Analysis of JavaScript Programs"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-32505-3_15) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85076142268&partnerID=MN8TOARS)
 
-Missing authors: _"Things as a service: Service model for IoT"_, [[DOI]](https://doi.org/10.1109/INDIN41052.2019.8972241) [[LINK]](https://iris.unive.it/handle/10278/3724089)
+White, R., Caiazza, G., Cortesi, A., Cho, Y.I., Christensen, H.I.: _"Black block recorder: Immutable black box logging for robots via blockchain"_, in IEEE Robotics and Automation Letters [[DOI]](https://doi.org/10.1109/LRA.2019.2928780) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85084954237&partnerID=MN8TOARS)
 
-Missing authors: _"String Abstraction for Model Checking of C Programs"_, [[DOI]](https://doi.org/10.1007/978-3-030-30923-7_5) [[LINK]](https://iris.unive.it/handle/10278/3721099)
-
-Missing authors: _"Replaceability and negotiation in a cloud service ecosystem"_, [[DOI]](https://doi.org/10.1186/s13677-019-0137-8) [[LINK]](https://iris.unive.it/handle/10278/3721101)
-
-Missing authors: _"Preventing Additive Attacks to Relational Database Watermarking"_, [[DOI]](https://doi.org/10.1007/978-3-030-37632-1_12) [[LINK]](https://iris.unive.it/handle/10278/3721913)
-
-Missing authors: _"Institutional Change for Gender Equality in Research"_, [[DOI]](https://doi.org/10.30687/978-88-6969-334-2) [[LINK]](https://iris.unive.it/handle/10278/3724436)
-
-Missing authors: _"Geographic location based dynamic and opportunistic RPL for distributed networks"_, [[DOI]](https://doi.org/10.1007/978-3-030-28957-7_11) [[LINK]](https://iris.unive.it/handle/10278/3721103)
-
-Missing authors: _"Cross-Programming Language Taint Analysis for the IoT Ecosystem"_, [[DOI]](https://doi.org/10.14279/tuj.eceasst.77.1104) [[LINK]](https://iris.unive.it/handle/10278/3720831)
-
-Missing authors: _"Completeness of Abstract Domains for String Analysis of JavaScript Programs"_, [[DOI]](https://doi.org/10.1007/978-3-030-32505-3_15) [[LINK]](https://iris.unive.it/handle/10278/3721097)
+Sahoo, S., Fajge, A.M., Halder, R., Cortesi, A.: _"A hierarchical and abstraction-based blockchain model"_, in Applied Sciences (Switzerland) [[DOI]](https://doi.org/10.3390/app9112343) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85067228024&partnerID=MN8TOARS)
 
 ## 2018
 
@@ -204,7 +198,7 @@ Mondin, F., Cortesi, A.: _"MySQL extension automatic porting to PDO for PHP migr
 
 Cortesi, A., Olliaro, M.: _"M-string segmentation: A refined abstract domain for string analysis in C Programs"_, in Proceedings - 2018 12th International Symposium on Theoretical Aspects of Software Engineering, TASE 2018 [[DOI]](https://doi.org/10.1109/TASE.2018.00009) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85062362809&partnerID=MN8TOARS)
 
-Agostino Cortesi, Pietro Ferrara, Raju Halder, Matteo Zanioli: _"Combining Symbolic and Numerical Domains for Information Leakage Analysis"_, [[DOI]](https://doi.org/10.1007/978-3-662-56499-8_6) [[LINK]](https://doi.org/10.1007/978-3-662-56499-8_6)
+Cortesi, A., Ferrara, P., Halder, R., Zanioli, M.: _"Combining symbolic and numerical domains for information leakage analysis"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-662-56499-8_6) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85042545933&partnerID=MN8TOARS)
 
 Ferrara, P., Cortesi, A., Spoto, F.: _"CIL to Java-bytecode Translation for Static Analysis Leveraging"_, in Proceedings - 2018 ACM/IEEE Conference on Formal Methods in Software Engineering, FormaliSE 2018 [[DOI]](https://doi.org/10.1145/3193992.3193994) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85059102801&partnerID=MN8TOARS)
 
@@ -231,6 +225,8 @@ Awan, M.K., Cortesi, A.: _"Blockchain transaction analysis using dominant sets"_
 ## 2016
 
 Sen, S., Cortesi, A., Chaki, N.: _"ROLAP based data warehouse schema to XML schema conversion"_, in Proceedings of the IEEE International Conference on Industrial Technology [[DOI]](https://doi.org/10.1109/ICIT.2016.7475025) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-84974587980&partnerID=MN8TOARS)
+
+Sen, S., Cortesi, A., Chaki, N.: _"Preface"_, in SpringerBriefs in Applied Sciences and Technology [[DOI]](https://doi.org/10.1016/B978-044482521-6/50000-0) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85111698475&partnerID=MN8TOARS)
 
 Sen, S., Ghosh, P., Cortesi, A.: _"Materialized view construction using linearizable nonlinear regression"_, in Advances in Intelligent Systems and Computing [[DOI]](https://doi.org/10.1007/978-81-322-2650-5_17) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-84983201877&partnerID=MN8TOARS)
 
