@@ -41,7 +41,7 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 		<div class="div-person-table-multicol">
 			<h3>Alvise Spanò</h3>
 			<h5>Reasearcher And Assistant Professor (Non-Tenure) @ Università Ca' Foscari Venezia</h5>
-			<br/>
+			Email: <a href="mailto:alvise.spano@unive.it">alvise.spano@unive.it</a><br/>
 			Website: <a href="http://github.com/alvisespano">http://github.com/alvisespano</a>
 		</div>
 	</div>
