@@ -8,7 +8,11 @@ Marco Crosara, Luca Olivieri, Fausto Spoto, Fabio Tagliaferro: _"Fungible and no
 
 Alvise Spanò, Lorenzo Fanton, Davide Pizzolato, Jacopo Moi, Francesco Vinci, Alberto Pesce, Cedrix J. Dongmo Foumthuim, Achille Giacometti, Marta Simeoni: _"Rinmaker: a fast, versatile and reliable tool to determine residue interaction networks in proteins"_, in BMC Bioinformatics [[DOI]](https://doi.org/10.1186/s12859-023-05466-y) [[LINK]](http://dx.doi.org/10.1186/s12859-023-05466-y)
 
+Souvick Das, Novarun Deb, Agostino Cortesi, Nabendu Chaki: _"Zero-shot Learning for Named Entity Recognition in Software Specification Documents"_, in 2023 IEEE 31st International Requirements Engineering Conference (RE) [[DOI]](https://doi.org/10.1109/re57278.2023.00019) [[LINK]](http://dx.doi.org/10.1109/re57278.2023.00019)
+
 Luca Olivieri, Luca Negrini, Vincenzo Arceri, Fabio Tagliaferro, Pietro Ferrara, Agostino Cortesi, Fausto Spoto: _"Information Flow Analysis for Detecting Non-Determinism in Blockchain"_, in Schloss Dagstuhl - Leibniz-Zentrum für Informatik [[DOI]](https://doi.org/10.4230/LIPICS.ECOOP.2023.23) [[LINK]](https://drops.dagstuhl.de/opus/volltexte/2023/18216/)
+
+SOUVICK DAS, Novarun Deb, Nabendu Chaki, Agostino Cortesi: _"Driving the Technology Value Stream by Analyzing App Reviews"_, in IEEE Transactions on Software Engineering [[DOI]](https://doi.org/10.1109/tse.2023.3270708) [[LINK]](http://dx.doi.org/10.1109/tse.2023.3270708)
 
 Luca Negrini, Guruprerana Shabadi, Caterina Urban: _"Static Analysis of Data Transformations in Jupyter Notebooks"_, in Proceedings of the 12th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis [[DOI]](https://doi.org/10.1145/3589250.3596145) [[LINK]](http://dx.doi.org/10.1145/3589250.3596145)
 

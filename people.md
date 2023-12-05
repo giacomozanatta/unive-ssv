@@ -122,6 +122,20 @@ Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where hi
 
 <div class="div-person-table">
 	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-das-souvick.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Souvick Das</h3>
+			<h5>Research Associate @ Università Ca' Foscari Venezia</h5>
+			Email: <a href="mailto:souvik.cmsa019@gmail.com">souvik.cmsa019@gmail.com</a><br/>
+			Website: <a href="https://github.com/svk-cu-nlp">https://github.com/svk-cu-nlp</a>
+		</div>
+	</div>
+</div>
+Souvick Das received the BSc and MSc degrees in computer science from West Bengal State University, India in the year 2012 and 2014 respectively. He is a research associate with the Department of Environmental Science, Informatics, and Statistics, of Ca’ Foscari University, Venice, Italy and is currently working toward the PhD degree in Computer Science and Engineering from University of Calcutta, India. He has qualified UGC NET-JRF in the year of 2016
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-dolcetti-greta.png"/>
 		<div class="div-person-table-multicol">
 			<h3>Greta Dolcetti</h3>
