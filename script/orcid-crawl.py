@@ -29,7 +29,7 @@
 #                                                                                       #
 # This script works by taking information out of the 'users.yaml' file located          #
 # in the same directory. Such a file should be split in two sections, each              #
-# containing a list of user information with <orcid, photo, from, to> where             #
+# containing a list of user information with <orcid, photo, from, to, student> where    #
 # - <orcid> is the user's identifiaction number on ORCID                                #
 # - <photo> is the filename of the image living under website_root/images/ to           #
 #   use as profile picture for them                                                     #
@@ -38,6 +38,7 @@
 # - <to> is the date (YYYY-MM-DD) when they left the lab, used to filter out            #
 #   publications published after they joined (if they are still part of the lab,        #
 #   'today' can be used)                                                                #
+# - <student> is either 'yes' or 'no' and forces the role to PhD student                #
 #                                                                                       #
 # An example file is:                                                                   #
 # users:                                                                                #
@@ -45,19 +46,28 @@
 #     photo: img1.png                                                                   #
 #     from: 2019-01-01                                                                  #
 #     to: today                                                                         #
+#     student: no                                                                       #
 #   - id: 0000-0000-0000-0001                                                           #
 #     photo: img2.png                                                                   #
 #     from: 2019-09-15                                                                  #
 #     to: today                                                                         #
+#     student: yes                                                                      #
 # past_users:                                                                           #
 #   - id: 0000-0000-0000-0002                                                           #
 #     photo: img3.png                                                                   #
 #     from: 2019-09-01                                                                  #
 #     to: 2021-09-30                                                                    #
+#     student: no                                                                       #
+# external_users:                                                                       #
+#   - id: 0000-0000-0000-0003                                                           #
+#     photo: img4.png                                                                   #
+#     from: 2019-09-01                                                                  #
+#     to: 2021-09-30                                                                    #
+#     student: no                                                                       #
 #                                                                                       #
 # The script then will:                                                                 #
-# - fill up '../people.md' with the info crawled for each entry in 'users' and          #
-#   'past_users', placing them in their respective sections                             #
+# - fill up '../people.md' with the info crawled for each entry in 'users',             #
+#   'past_users' and 'external_users', placing them in their respective sections        #
 # - fill up '../publications.md' with works from both present and past users that       #
 #   were published within the time window of at least one of the autors (to avoid       #
 #   duplicates, we discriminate publications based on DOI)                              #
@@ -201,14 +211,14 @@ def parse_user(access_token, user):
 	website = access_field(lambda r: r['researcher-urls']['researcher-url'][0]['url']['value'], record, 'website')
 
 	record = query_api(access_token, user_id, 'activities')
-	role = access_field(lambda r: r['employments']['affiliation-group'][0]['summaries'][0]['employment-summary']['role-title'], record, 'role')
-	org = access_field(lambda r: r['employments']['affiliation-group'][0]['summaries'][0]['employment-summary']['organization']['name'], record, 'org')
 
-	if role is None and org is None:
-		# if no employment, this is a student
+	if user['student']:
 		log('\tForcing role to PhD Student')
 		role = 'PhD Student'
 		org = 'Università Ca\' Foscari Venezia'
+	else:
+		role = access_field(lambda r: r['employments']['affiliation-group'][0]['summaries'][0]['employment-summary']['role-title'], record, 'role')
+		org = access_field(lambda r: r['employments']['affiliation-group'][0]['summaries'][0]['employment-summary']['organization']['name'], record, 'org')
 
 	raw_works = access_field(lambda r: r['works']['group'], record, 'works', default=list(), do_log=False)
 	return User(name, surname, user['photo'], mail, website, role, org, bio, raw_works)
@@ -351,11 +361,13 @@ if __name__ == '__main__':
 	for user in data['users']:
 		process_user_and_add(user, people, publications)
 
-	for user in data['external_users']:
-		process_user_and_add(user, external_people, publications)
+	if 'external_users' in data:
+		for user in data['external_users']:
+			process_user_and_add(user, external_people, publications)
 
-	#for user in data['past_users']:
-	#	process_user_and_add(user, past_people, publications)
+	if 'past_users' in data:
+		for user in data['past_users']:
+			process_user_and_add(user, past_people, publications)
 
 	publications = sorted(publications, key=sort_by_date)
 	populate_people_page(people, past_people, external_people)
