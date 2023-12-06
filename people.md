@@ -108,20 +108,6 @@ My research interests include cyber security, software verification, blockchain,
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
-		<div class="div-person-table-multicol">
-			<h3>Giacomo Boldini</h3>
-			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
-			Email: <a href="mailto:giacomo.boldini@unive.it">giacomo.boldini@unive.it</a><br/>
-			
-		</div>
-	</div>
-</div>
-Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where his primary research interests lie in the domains of static analysis, abstract interpretation, and program verification. He obtained both his Bachelor's and Master's degrees in Computer Science at the University of Parma. His Master's thesis, titled "Source code clustering via explainable code similarity based on control flow graph features", centered around source code similarity and the development of explainable source code representation designed to facilitate machine learning methodologies in understanding code features and their similarities. During his Master's degree at the University of Parma, he also worked on a project involving the optimization and parallelization of code, leveraging the power of NVIDIA GPUs and the CUDA programming model to enhance the performance of numerical analysis algorithms.
-<br/><br/>
-
-<div class="div-person-table">
-	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-das-souvick.jpg"/>
 		<div class="div-person-table-multicol">
 			<h3>Souvick Das</h3>
@@ -132,6 +118,21 @@ Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where hi
 	</div>
 </div>
 Souvick Das received the BSc and MSc degrees in computer science from West Bengal State University, India in the year 2012 and 2014 respectively. He is a research associate with the Department of Environmental Science, Informatics, and Statistics, of Ca’ Foscari University, Venice, Italy and is currently working toward the PhD degree in Computer Science and Engineering from University of Calcutta, India. He has qualified UGC NET-JRF in the year of 2016
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-bag-raunak.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Raunak Bag</h3>
+			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
+			<br/>
+			Website: <a href="https://pctechscribble.blogspot.com">https://pctechscribble.blogspot.com</a>
+		</div>
+	</div>
+</div>
+Raunak Bag completed his B.Sc. and M.Sc. in Computer Science from the University of Calcutta, India in 2019 and 2021. As part of his masters project he created an online collaboration application which brings people with ideas closer to those who can help them create, design and/or develop it under the supervision of Prof. Nabendu Chaki, University of Calcutta.
+Raunak joined Ca’ Foscari University of Venice as a PhD student in January 2022 under the supervision of Prof. Agostino Cortesi. His research focuses on requirement specification and static analysis of robotic software. His current efforts are focused towards robotic system requirements validation by simulation approach. His other research interests are computer architecture, VLSI design and high-performance computing.
 <br/><br/>
 
 <div class="div-person-table">
@@ -148,6 +149,36 @@ Souvick Das received the BSc and MSc degrees in computer science from West Benga
 Greta Dolcetti obtained a Bachelor’s Degree (September 2021) and a Master’s Degree (July 2023) in Computer Science, both issued by the University of Parma. She started working in the static analysis by abstract interpretation field during her Master’s thesis  “Abstract Compilation Techniques for Static Analysis”, under the supervision of Professors Arceri and Zaffanella, where she implemented two abstract compilation techniques concerning the accuracy/efficiency trade-off.
 Greta is now a Ph.D. student at Ca’ Foscari University of Venice, where her research interests are static analysis, abstract interpretation, and, more in general, formal methods for program verification.
 During her Master’s degree, she collaborated with the Department of Food and Drugs at the University of Parma on a research project involving constraint programming and molecular modeling methods to predict possible protein mutations of the SARS-CoV-2 virus.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-zanatta-giacomo.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Giacomo Zanatta</h3>
+			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
+			Email: <a href="mailto:giacomo.zanatta@unive.it">giacomo.zanatta@unive.it</a><br/>
+			
+		</div>
+	</div>
+</div>
+PhD Student at Ca' Foscari University of Venice, keen in computer science and programming languages. My main research branch is static analysis.
+
+From 2020 to 2023, I was a Software Consultant and Technical Leader at Alpenite, a software company in Venice, focused (but not limited) on building e-commerce systems for luxury brands.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Giacomo Boldini</h3>
+			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
+			Email: <a href="mailto:giacomo.boldini@unive.it">giacomo.boldini@unive.it</a><br/>
+			
+		</div>
+	</div>
+</div>
+Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where his primary research interests lie in the domains of static analysis, abstract interpretation, and program verification. He obtained both his Bachelor's and Master's degrees in Computer Science at the University of Parma. His Master's thesis, titled "Source code clustering via explainable code similarity based on control flow graph features", centered around source code similarity and the development of explainable source code representation designed to facilitate machine learning methodologies in understanding code features and their similarities. During his Master's degree at the University of Parma, he also worked on a project involving the optimization and parallelization of code, leveraging the power of NVIDIA GPUs and the CUDA programming model to enhance the performance of numerical analysis algorithms.
 <br/><br/>
 
 <div class="div-person-table">
