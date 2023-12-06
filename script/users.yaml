@@ -23,16 +23,24 @@ users:
     photo: pfp-olivieri-luca.jpg
     from: 2023-06-01
     to: today
-  - id: 0009-0006-4741-0033
-    photo: pfp-boldini-giacomo.jpg
-    from: 2023-09-15
-    to: today
   - id: 0000-0002-3314-2537
     photo: pfp-das-souvick.jpg
     from: 2022-09-01
     to: today
+  - id: 0009-0008-3592-3186
+    photo: pfp-bag-raunak.jpg
+    from: 2022-01-01
+    to: today
   - id: 0000-0002-2983-9251
     photo: pfp-dolcetti-greta.png
+    from: 2023-09-15
+    to: today
+  - id: 0009-0002-7401-7262
+    photo: pfp-zanatta-giacomo.jpg
+    from: 2023-09-15
+    to: today
+  - id: 0009-0006-4741-0033
+    photo: pfp-boldini-giacomo.jpg
     from: 2023-09-15
     to: today
   - id: 0009-0003-4022-9766
