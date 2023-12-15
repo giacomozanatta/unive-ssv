@@ -3,7 +3,7 @@ layout: home
 ---
 
 <center>
-	<img src="{{ site.baseurl }}/images/ssv-logo-full.png" alt="{{ site.title | escape }}" style="max-height: 150px;"/>
+	<img src="{{ site.baseurl }}/images/ssv.png" alt="{{ site.title | escape }}" style="max-height: 200px; margin-bottom: 20px;"/>
 </center>
 
 The Software and System Verification group @ Ca’ Foscari University of Venice is a research team focused on static analysis and its applications.
