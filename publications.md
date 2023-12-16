@@ -4,6 +4,8 @@ title: Publications
 ---
 ## 2023
 
+Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu Chaki: _"SCARS: Suturing wounds due to conflicts between non‐functional requirements in autonomous and robotic systems"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.3297) [[LINK]](https://doi.org/10.1002/spe.3297)
+
 Marco Crosara, Luca Olivieri, Fausto Spoto, Fabio Tagliaferro: _"Fungible and non-fungible tokens with snapshots in Java"_, in Cluster Computing [[DOI]](https://doi.org/10.1007/s10586-022-03756-3) [[LINK]](https://doi.org/10.1007/s10586-022-03756-3)
 
 Alvise Spanò, Lorenzo Fanton, Davide Pizzolato, Jacopo Moi, Francesco Vinci, Alberto Pesce, Cedrix J. Dongmo Foumthuim, Achille Giacometti, Marta Simeoni: _"Rinmaker: a fast, versatile and reliable tool to determine residue interaction networks in proteins"_, in BMC Bioinformatics [[DOI]](https://doi.org/10.1186/s12859-023-05466-y) [[LINK]](http://dx.doi.org/10.1186/s12859-023-05466-y)
