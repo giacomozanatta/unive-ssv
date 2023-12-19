@@ -50,6 +50,8 @@ Krishnasrija, R., Mandal, A.K., Cortesi, A.: _"A lightweight mutual and transiti
 
 Mitra, D., Cortesi, A., Chaki, N.: _"A Two-Hop Neighborhood Based Berserk Detection Algorithm for Probabilistic Model of Consensus in Distributed Ledger Systems"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-031-41456-5_29) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85172418851&partnerID=MN8TOARS)
 
+Missing authors: _"Eliciting context-oriented NFR constraints and conflicts in robotic systems"_, [[DOI]](https://doi.org/10.1007/s11334-023-00545-y) [[LINK]](https://iris.unive.it/handle/10278/5045521)
+
 ## 2022
 
 Missing authors: _"Reducing multiple occurrences of meta-mark selection in relational data watermarking"_, in IEEE Access [[DOI]](https://doi.org/10.1109/access.2022.3182099) [[LINK]](http://dx.doi.org/10.1109/access.2022.3182099)
