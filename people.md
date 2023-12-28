@@ -37,6 +37,25 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 
 <div class="div-person-table">
 	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-falcarin-paolo.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Paolo Falcarin</h3>
+			<h5>Associate Professor @ Università Ca' Foscari</h5>
+			<br/>
+			Website: <a href="http://www.unive.it/persone/paolo.falcarin">http://www.unive.it/persone/paolo.falcarin</a>
+		</div>
+	</div>
+</div>
+Paolo Falcarin is Associate Professor at Ca' Foscari University of Venice since Septemebr 2021.
+He was awarded his PhD in Software Engineering in 2004, and MEng in Computer Engineering in 2000 from Polytechnic University of Turin (Italy), where he worked as a research associate before joining the University of East London in 2010 as Senior Lecturer and then Reader in Computer Science, where he led the Secure Software Engineering research group.
+His research interests include Software Protection and Security, Software Engineering and Distributed Systems; he has been Principal Investigator for UEL in the European FP7 project ASPIRE (Advanced Software Protection: Integration Research and Exploitation) jointly with six companies and universities from across Europe.
+Paolo spent a sabbatical research leave in 2012 at Centre for Research on Evolution Search and Testing (CREST) in the Computer Science department at UCL (University College London). He has been visiting lecturer at Tongji University of Shanghai in 2009 and Hangzhou Dianzi university in 2016, and visiting researcher at ETH Zurich in 2003.
+Paolo is associate editor of the Computers & Security journal, Program-Committee member of the IEEE/ACM International Conference on Automated Software Engineering (ASE 2023) and the IEEE/ACM International Conference on Big Data Computing, Applications and Technologies (BDCAT 2023), and Steering Committee member of the CheckMATE workshop.   
+Paolo is a Fellow of the Higher Education Academy, a CSSLP certified security practitioner, an Oracle Certified Professional Java programmer, and an amateur chess player.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
 		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-spano-alvise.jpg"/>
 		<div class="div-person-table-multicol">
 			<h3>Alvise Spanò</h3>
@@ -73,6 +92,25 @@ In 2008, he was a visiting researcher at the Department of Computer Science, Uni
 From 2014 to 2017, he worked on the Watermark Algorithms for Secret Communications project, which Consejo Nacional de Ciencia y Tecnología granted. México. Also, from 2018 to 2020, he worked on the project Analysis and Design of Algorithms and Security Platforms for the Internet of Things, granted by Consejo Nacional de Ciencia y Tecnología. México 
 
 His research interests are relational databases theory, information security and privacy, and data usability and authenticity.
+<br/><br/>
+
+<div class="div-person-table">
+	<div class="div-person-table">
+		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-caiazza-gianluca.jpg"/>
+		<div class="div-person-table-multicol">
+			<h3>Gianluca Caiazza</h3>
+			<h5>Assistant Professor @ Ca' Foscari University Of Venice</h5>
+			<br/>
+			
+		</div>
+	</div>
+</div>
+Gianluca is an assistant professor at Ca' Foscari University of Venice (Italy). He worked for his postdoc and PhD in the ACADIA Center at the University of Venice under the supervision of Professor Agostino Cortesi.
+From July 2018 to March 2019, he was a full-time researcher contributing to an international project among several Universities at Gachon Univerity (Seoul, South Korea) in the “A.I. and Smart Society Laboratory” under the guide of Professor Young-Im Cho.
+
+He is mainly focused on security enhancements of cyber-physical systems (CPS) with particular emphasis on robotics and distributed connected devices, e.g. data distributed system (DDS), oneM2M.
+
+His research aims to explore the trade-off between security and usability for Internet of Things (robotic) applications. Working on the widely used robotic middleware Robot Operating System (ROS), his work targets on providing automatic tools for security assessment and verification of the system. Currently, he focused on the mathematical verification of properties in a multi-agent distributed environment (e.g. smart cities scale) and privacy enforcement in dynamic networks.
 <br/><br/>
 
 <div class="div-person-table">

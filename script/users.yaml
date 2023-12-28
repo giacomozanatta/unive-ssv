@@ -9,6 +9,11 @@ users:
     from: 2019-01-01
     to: today
     student: no
+  - id: 0000-0003-1933-5348
+    photo: pfp-falcarin-paolo.jpg
+    from: 2019-01-01
+    to: today
+    student: no
   - id: 0000-0002-6905-2736
     photo: pfp-spano-alvise.jpg
     from: 2019-09-15
@@ -17,6 +22,11 @@ users:
   - id: 0000-0002-8818-7767
     photo: pfp-perezgort-maikel.jpg
     from: 2019-09-15
+    to: today
+    student: no
+  - id: 0000-0002-2820-7121
+    photo: pfp-caiazza-gianluca.jpg
+    from: 2017-09-01
     to: today
     student: no
   - id: 0000-0001-9930-8854

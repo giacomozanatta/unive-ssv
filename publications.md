@@ -54,9 +54,17 @@ Missing authors: _"Eliciting context-oriented NFR constraints and conflicts in r
 
 ## 2022
 
+Ahmed A. Alwan, Allan J. Brimicombe, Mihaela Anca Ciupala, Seyed Ali Ghorashi, Andres Baravalle, Paolo Falcarin: _"Time-series clustering for sensor fault detection in large-scale Cyber–Physical Systems"_, in Computer Networks [[DOI]](https://doi.org/10.1016/j.comnet.2022.109384) [[LINK]](https://doi.org/10.1016/j.comnet.2022.109384)
+
 Missing authors: _"Reducing multiple occurrences of meta-mark selection in relational data watermarking"_, in IEEE Access [[DOI]](https://doi.org/10.1109/access.2022.3182099) [[LINK]](http://dx.doi.org/10.1109/access.2022.3182099)
 
+Ahmed Abdulhasan Alwan, Mihaela Anca Ciupala, Allan J. Brimicombe, Seyed Ali Ghorashi, Andres Baravalle, Paolo Falcarin: _"Data quality challenges in large-scale cyber-physical systems: A systematic review"_, in Information Systems [[DOI]](https://doi.org/10.1016/j.is.2021.101951) [[LINK]](https://doi.org/10.1016/j.is.2021.101951)
+
 Antonio Panfili, Alvise Spanò, Agostino Cortesi: _"A Wearable System for Jump Detection in Inline Figure Skating"_, in Sensors [[DOI]](https://doi.org/10.3390/s22041650) [[LINK]](https://doi.org/10.3390/s22041650)
+
+Missing authors: _"SROS2: Usable Cyber Security Tools for ROS 2"_, [[DOI]](https://doi.org/10.1109/IROS47612.2022.9982129) [[LINK]](https://iris.unive.it/handle/10278/5035211)
+
+Adil Yousef Hussein, Paolo Falcarin, Ahmed T. Sadiq: _"IoT Intrusion Detection Using Modified Random Forest Based on Double Feature Selection Methods"_, [[DOI]](https://doi.org/10.1007/978-3-030-97255-4_5) [[LINK]](https://doi.org/10.1007/978-3-030-97255-4_5)
 
 Arceri, V., Olliaro, M., Cortesi, A., Ferrara, P.: _"Relational String Abstract Domains"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-94583-1_2) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85124308681&partnerID=MN8TOARS)
 
@@ -85,6 +93,8 @@ Vincenzo Arceri, Isabella Mastroeni: _"Analyzing Dynamic Code"_, in ACM Transact
 Mastroeni, I., Arceri, V.: _"Improving dynamic code analysis by code abstraction"_, in arXiv [[DOI]](https://doi.org/10.48550/arxiv.2109.02813) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85170897077&partnerID=MN8TOARS)
 
 Mastroeni, I., Arceri, V.: _"Improving dynamic code analysis by code abstraction"_, in Electronic Proceedings in Theoretical Computer Science, EPTCS [[DOI]](https://doi.org/10.4204/EPTCS.341.2) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85115233492&partnerID=MN8TOARS)
+
+Missing authors: _"Enhancement performance of random forest algorithm via one hot encoding for IoT IDS"_, [[DOI]](https://doi.org/10.21533/pen.v9i3.2204) [[LINK]](https://iris.unive.it/handle/10278/3746528)
 
 Ferrara, P., Olivieri, L., Spoto, F.: _"Static Privacy Analysis by Flow Reconstruction of Tainted Data"_, in International Journal of Software Engineering and Knowledge Engineering [[DOI]](https://doi.org/10.1142/S0218194021500303) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85111441943&partnerID=MN8TOARS)
 
@@ -128,6 +138,10 @@ Missing authors: _"An Abstract Domain for Objects in Dynamic Programming Languag
 
 Arceri, V., Mastroeni, I.: _"A sound abstract interpreter for dynamic code"_, in Proceedings of the ACM Symposium on Applied Computing [[DOI]](https://doi.org/10.1145/3341105.3373964) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85083036879&partnerID=MN8TOARS)
 
+Missing authors: _"HADES: a Hybrid Anomaly Detection System for Large-Scale Cyber-Physical Systems"_, [[DOI]](https://doi.org/10.1109/FMEC49853.2020.9144751) [[LINK]](https://iris.unive.it/handle/10278/3743232)
+
+Missing authors: _"Code renewability for native software protection"_, [[DOI]](https://doi.org/10.1145/3404891) [[LINK]](https://iris.unive.it/handle/10278/3743229)
+
 Negrini, L., Arceri, V., Ferrara, P., Cortesi, A.: _"Twinning automata and regular expressions for string static analysis"_, in arXiv [[DOI]](https://doi.org/10.48550/arxiv.2006.02715) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85170315256&partnerID=MN8TOARS)
 
 Ferrara, P., Negrini, L.: _"SARL: OO Framework Specification for Static Analysis"_, in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) [[DOI]](https://doi.org/10.1007/978-3-030-63618-0_1) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85097831935&partnerID=MN8TOARS)
@@ -159,6 +173,12 @@ Pérez Gort, M.L., Feregrino-Uribe, C., Cortesi, A., Fernández-Peña, F.: _"A D
 ## 2019
 
 Maria Sangiuliano, Agostino Cortesi: _"Institutional Change for Gender Equality in Research Lesson Learned from the Field"_, [[DOI]](https://doi.org/10.30687/978-88-6969-334-2) [[LINK]](https://doi.org/10.30687/978-88-6969-334-2)
+
+Cataldo Basile, Daniele Canavese, Leonardo Regano, Paolo Falcarin, Bjorn De Sutter: _"A meta-model for software protections and reverse engineering attacks"_, in Journal of Systems and Software [[DOI]](https://doi.org/10.1016/j.jss.2018.12.025) [[LINK]](https://doi.org/10.1016/j.jss.2018.12.025)
+
+Missing authors: _"Understanding the behaviour of hackers while performing attack tasks in a professional setting and in a public challenge"_, [[DOI]](https://doi.org/10.1007/s10664-018-9625-6) [[LINK]](https://iris.unive.it/handle/10278/3743230)
+
+Missing authors: _"Analysis of Obfuscated Code with Program Slicing"_, [[DOI]](https://doi.org/10.1109/CyberSecPODS.2019.8885094) [[LINK]](https://iris.unive.it/handle/10278/3743234)
 
 Spoto, F., Burato, E., Ernst, M.D., Ferrara, P., Lovato, A., Macedonio, D., Spiridon, C.: _"Static identification of injection attacks in Java"_, in ACM Transactions on Programming Languages and Systems [[DOI]](https://doi.org/10.1145/3332371) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85068440875&partnerID=MN8TOARS)
 

@@ -103,7 +103,7 @@ class User:
 
 	def dump(self):
 		position = f'{self.role} @ {self.org}' if self.role is not None and self.org is not None else ''
-		email = f'Email: <a href="mailto:{self.mail}">{self.mail}</a>' if self.mail is not None else ''
+		email = f'Email: <a href="mailto:{self.mail}">{self.mail}</a><br/>' if self.mail is not None else ''
 		website = f'Website: <a href="{self.website}">{self.website}</a>' if self.website is not None else ''
 		bio = f'{self.bio}' if self.bio is not None else ''
 		return f'''
@@ -113,7 +113,7 @@ class User:
 		<div class="div-person-table-multicol">
 			<h3>{self.name} {self.surname}</h3>
 			<h5>{position}</h5>
-			{email}<br/>
+			{email}
 			{website}
 		</div>
 	</div>
