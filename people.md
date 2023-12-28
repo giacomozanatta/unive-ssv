@@ -41,7 +41,7 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 		<div class="div-person-table-multicol">
 			<h3>Paolo Falcarin</h3>
 			<h5>Associate Professor @ Università Ca' Foscari</h5>
-			<br/>
+			
 			Website: <a href="http://www.unive.it/persone/paolo.falcarin">http://www.unive.it/persone/paolo.falcarin</a>
 		</div>
 	</div>
@@ -100,7 +100,7 @@ His research interests are relational databases theory, information security and
 		<div class="div-person-table-multicol">
 			<h3>Gianluca Caiazza</h3>
 			<h5>Assistant Professor @ Ca' Foscari University Of Venice</h5>
-			<br/>
+			
 			
 		</div>
 	</div>
@@ -164,7 +164,7 @@ Souvick Das received the BSc and MSc degrees in computer science from West Benga
 		<div class="div-person-table-multicol">
 			<h3>Raunak Bag</h3>
 			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
-			<br/>
+			
 			Website: <a href="https://pctechscribble.blogspot.com">https://pctechscribble.blogspot.com</a>
 		</div>
 	</div>
