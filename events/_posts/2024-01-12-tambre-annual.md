@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "2023 (yet 2024!) SSV yearly workshop"
-date: "June 15, 2023"
+date: "January 12, 2024"
 ---
 
 Location: Via Roma, 82, 32010 Tambre BL, Italy
