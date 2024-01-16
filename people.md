@@ -5,7 +5,9 @@ title: People
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-cortesi-agostino.png"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-cortesi-agostino.png"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Agostino Cortesi</h3>
 			<h5>Full Professor @ Università Ca' Foscari Venezia</h5>
@@ -19,7 +21,9 @@ Agostino Cortesi, PhD, is a full professor of Computer Science at Ca’ Foscari 
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-ferrara-pietro.png"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-ferrara-pietro.png"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Pietro Ferrara</h3>
 			<h5>Associate Professor @ Ca' Foscari University Of Venice</h5>
@@ -37,7 +41,9 @@ In particular, he was the Head of Research and Development at JuliaSoft SRL (a s
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-falcarin-paolo.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-falcarin-paolo.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Paolo Falcarin</h3>
 			<h5>Associate Professor @ Università Ca' Foscari</h5>
@@ -56,7 +62,9 @@ Paolo is a Fellow of the Higher Education Academy, a CSSLP certified security pr
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-spano-alvise.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-spano-alvise.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Alvise Spanò</h3>
 			<h5>Reasearcher And Assistant Professor (Non-Tenure) @ Università Ca' Foscari Venezia</h5>
@@ -74,7 +82,9 @@ Before my academic career, I had a career as a software developer. I spent more 
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-perezgort-maikel.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-perezgort-maikel.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Maikel Lázaro Pérez Gort</h3>
 			<h5>Non-Tenure Track Assistant Professor @ Università Ca' Foscari Di Venezia</h5>
@@ -96,7 +106,9 @@ His research interests are relational databases theory, information security and
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-caiazza-gianluca.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-caiazza-gianluca.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Gianluca Caiazza</h3>
 			<h5>Assistant Professor @ Ca' Foscari University Of Venice</h5>
@@ -115,7 +127,9 @@ His research aims to explore the trade-off between security and usability for In
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-negrini-luca.jpeg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-negrini-luca.jpeg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Luca Negrini</h3>
 			<h5>Assistant Professor (Non-Tenure) @ Università Ca' Foscari Venezia</h5>
@@ -129,7 +143,9 @@ I got a Bachelor’s and Master’s degrees at the University of Verona, followe
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-olivieri-luca.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-olivieri-luca.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Luca Olivieri</h3>
 			<h5>Post Doc Researcher - Assistant Professor (No-Tenure Track) @ Ca' Foscari University Of Venice</h5>
@@ -146,7 +162,9 @@ My research interests include cyber security, software verification, blockchain,
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-das-souvick.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-das-souvick.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Souvick Das</h3>
 			<h5>Research Associate @ Università Ca' Foscari Venezia</h5>
@@ -160,7 +178,9 @@ Souvick Das received the BSc and MSc degrees in computer science from West Benga
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-bag-raunak.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-bag-raunak.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Raunak Bag</h3>
 			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
@@ -175,7 +195,9 @@ Raunak joined Ca’ Foscari University of Venice as a PhD student in January 202
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-dolcetti-greta.png"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-dolcetti-greta.png"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Greta Dolcetti</h3>
 			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
@@ -191,7 +213,9 @@ During her Master’s degree, she collaborated with the Department of Food and D
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-zanatta-giacomo.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-zanatta-giacomo.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Giacomo Zanatta</h3>
 			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
@@ -207,7 +231,9 @@ From 2020 to 2023, I was a Software Consultant and Technical Leader at Alpenite,
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-boldini-giacomo.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Giacomo Boldini</h3>
 			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
@@ -221,7 +247,9 @@ Giacomo Boldini is a Ph.D. student at Ca' Foscari University of Venice, where hi
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-chowdhury-purbasha.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-chowdhury-purbasha.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Purbasha Chowdhury</h3>
 			<h5>Phd Student @ Università Ca' Foscari Venezia</h5>
@@ -240,7 +268,9 @@ I worked as a research fellow at Ca'Foscari University of Venice in the domain o
 
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{ site.baseurl }}/images/pfp-arceri-vincenzo.jpg"/>
+		<div class="div-person-table-col">
+			<img src="{{ site.baseurl }}/images/pfp-arceri-vincenzo.jpg"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>Vincenzo Arceri</h3>
 			<h5>Non-Tenured Track Assistant Professor @ University Of Parma</h5>

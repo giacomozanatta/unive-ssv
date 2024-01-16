@@ -74,6 +74,8 @@
 # - generate a news page under '../news/_posts/' named after the publication date       #
 #   and the hash of the publication's title, containing a brief text to illustrate      #
 #   what was published                                                                  #
+# - generate the includes/index_people.html page with the updated photos of all         #
+#   and external members, but not the past ones                                         #
 #                                                                                       #
 #########################################################################################
 
@@ -109,7 +111,9 @@ class User:
 		return f'''
 <div class="div-person-table">
 	<div class="div-person-table">
-		<img class="div-person-table-col" src="{{{{ site.baseurl }}}}/images/{self.photo}"/>
+		<div class="div-person-table-col">
+			<img src="{{{{ site.baseurl }}}}/images/{self.photo}"/>
+		</div>
 		<div class="div-person-table-multicol">
 			<h3>{self.name} {self.surname}</h3>
 			<h5>{position}</h5>
@@ -140,7 +144,7 @@ class Pub:
 
 	def readable_kind(self):
 		if self.pub_type is None:
-			return "article"
+			return 'article'
 		r = self.pub_type.lower().replace('_', ' ').replace('-', ' ')
 		if r == 'book':
 			r = 'book chapter'
@@ -277,11 +281,11 @@ def add_news(publication):
 
 def populate_publications_page(publications):
 	with open('../publications.md', 'w') as file:
-		file.write("""---
+		file.write('''---
 layout: page
 title: Publications
 ---
-""")
+''')
 		curryear = None
 		for publication in publications:
 			year = publication.pub_date.year
@@ -292,28 +296,28 @@ title: Publications
 				curryear = year
 				file.write(f'## {curryear}\n\n')
 
-			log("Adding", publication.title, "to the Publications page")
+			log('Adding', publication.title, 'to the Publications page')
 			file.write(publication.dump())
 
 def populate_people_page(people, past_people, external_people):
 	with open('../people.md', 'w') as file:
-		file.write("""---
+		file.write('''---
 layout: page
 title: People
 ---
-""")
+''')
 		for person in people:
-			log("Adding", person.name, person.surname, "to the People page")
+			log('Adding', person.name, person.surname, 'to the People page')
 			file.write(person.dump())
 		if len(external_people) > 0:
 			file.write('## External members\n')
 			for person in external_people:
-				log("Adding", person.name, person.surname, "to the People page")
+				log('Adding', person.name, person.surname, 'to the People page')
 				file.write(person.dump())
 		if len(past_people) > 0:
 			file.write('## Past members\n')
 			for person in past_people:
-				log("Adding", person.name, person.surname, "to the People page")
+				log('Adding', person.name, person.surname, 'to the People page')
 				file.write(person.dump())
 
 def process_user_and_add(user, people_list, publications_list):
@@ -338,6 +342,35 @@ def process_user_and_add(user, people_list, publications_list):
 			continue
 		else:
 			publications_list += [publication]
+
+def populate_index_people(people, external_people):
+	log('Populating ../_includes/index_people.html')
+	with open('../_includes/index_people.html', 'w') as file:
+		file.write('''<br/>
+<h2>Who we are</h2>
+
+<a href="{{ site.baseurl }}/people.html">More info »</a><br><br>
+
+<div class="teambox-container">''')
+		for person in people:
+			file.write(f'''
+	<div class="teambox-card-container teambox-card-width">
+    	<img class="teambox-img" src="{{{{ site.baseurl }}}}/images/{person.photo}">
+  	</div>''')
+		for person in external_people:
+			file.write(f'''
+	<div class="teambox-card-container teambox-card-width">
+    	<img class="teambox-img" src="{{{{ site.baseurl }}}}/images/{person.photo}">
+  	</div>''')
+		file.write('''
+</div>
+
+<div class="div-img-table">
+  <div class="div-img-table-row">
+    <img class="div-img-table-multicol" src="{{ site.baseurl }}/images/{{ site.groupphoto }}"/>
+  </div>
+</div>
+''')
 
 def sort_by_date(publication):
 	return publication.pub_date
@@ -372,6 +405,7 @@ if __name__ == '__main__':
 	publications = sorted(publications, key=sort_by_date)
 	populate_people_page(people, past_people, external_people)
 	populate_publications_page(reversed(publications))
+	populate_index_people(people, external_people)
 
 	# cleanup news folder
 	if os.path.exists('../news/_posts/'):

@@ -7,14 +7,12 @@ date: "June 15, 2023"
 Location: Via Roma, 82, 32010 Tambre BL, Italy
 <div class="div-img-table">
   <div class="div-img-table-row">
-    <img class="div-img-table-col" src="{{ site.baseurl }}/images/tambre-1.jpg"/>
-    <img class="div-img-table-col" src="{{ site.baseurl }}/images/tambre-2.jpg"/>
-    <img class="div-img-table-col" src="{{ site.baseurl }}/images/tambre-3.jpg"/> 
+    <img class="div-img-table-col" src="{{ site.baseurl }}/images/2024-winter-tambre-02.png"/>
+    <img class="div-img-table-col" src="{{ site.baseurl }}/images/2024-winter-tambre-03.png"/>
+    <img class="div-img-table-col" src="{{ site.baseurl }}/images/2024-winter-tambre-04.png"/> 
   </div>
   <div class="div-img-table-row">
-    <img class="div-img-table-col" src="{{ site.baseurl }}/images/tambre-4.jpg"/>
-    <img class="div-img-table-col" src="{{ site.baseurl }}/images/tambre-5.jpg"/>
-    <img class="div-img-table-col" src="{{ site.baseurl }}/images/tambre-6.jpg"/>
+    <img class="div-img-table-multicol" src="{{ site.baseurl }}/images/2024-winter-tambre-01.jpg"/>
   </div>
 </div>
 <br>

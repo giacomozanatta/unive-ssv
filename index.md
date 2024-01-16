@@ -11,7 +11,7 @@ The Software and System Verification group @ Ca’ Foscari University of Venice 
 <style>
 .column {
 	float: left;
-	width: 50%;
+	width: 49.4%;
 }
 
 /* Clear floats after the columns */
@@ -23,7 +23,7 @@ The Software and System Verification group @ Ca’ Foscari University of Venice 
 </style>
 
 <div class="row">
-	<div class="column">
+	<div class="column" style="margin-right: 5px">
 		<h2>Latest news</h2>
 		<ul class="list-page">
 {% for post in site.categories.news limit: 2 %}
@@ -35,7 +35,7 @@ The Software and System Verification group @ Ca’ Foscari University of Venice 
 		</ul>
 		<a href="{{ site.baseurl }}/news/">All news ({{ site.categories.news.size }}) »</a><br><br>
 	</div>
-  	<div class="column">
+  	<div class="column" style="margin-left: 5px">
   		<h2>Latest events</h2>
 		<ul class="list-page">
 {% for post in site.categories.events limit: 2 %}
@@ -49,18 +49,4 @@ The Software and System Verification group @ Ca’ Foscari University of Venice 
 	</div>
 </div> 
 
-<div class="div-img-table">
-<div class="div-img-table-row">
-  <img class="div-img-table-col" src="{{ site.baseurl }}/images/home-1.jpg"/>
-  <img class="div-img-table-col" src="{{ site.baseurl }}/images/home-2.jpg"/>
-  <img class="div-img-table-col" src="{{ site.baseurl }}/images/home-3.jpg"/> 
-</div>
-<div class="div-img-table-row">
-  <img class="div-img-table-col" src="{{ site.baseurl }}/images/home-4.jpg"/>
-  <img class="div-img-table-col" src="{{ site.baseurl }}/images/home-5.jpg"/>
-  <img class="div-img-table-col" src="{{ site.baseurl }}/images/home-6.jpg"/>
-</div>
-<div class="div-img-table-row">
-  <img class="div-img-table-multicol" src="{{ site.baseurl }}/images/home-big.jpg"/>
-</div>
-</div>
+{%- include index_people.html -%}
