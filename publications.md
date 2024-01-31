@@ -6,6 +6,8 @@ title: Publications
 
 Roy, S., Raj, S., Chakraborty, T., Chakrabarty, A., Cortesi, A., Sen, S.: _"Efficient OLAP query processing across cuboids in distributed data warehousing environment"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2023.122481) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85175824863&partnerID=MN8TOARS)
 
+Souvick Das, Novarun Deb, Agostino Cortesi, Nabendu Chaki: _"Extracting goal models from natural language requirement specifications"_, in Journal of Systems and Software [[DOI]](https://doi.org/10.1016/j.jss.2024.111981) [[LINK]](https://doi.org/10.1016/j.jss.2024.111981)
+
 ## 2023
 
 Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu Chaki: _"SCARS: Suturing wounds due to conflicts between non‐functional requirements in autonomous and robotic systems"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.3297) [[LINK]](https://doi.org/10.1002/spe.3297)
