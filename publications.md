@@ -6,6 +6,8 @@ title: Publications
 
 Luca Olivieri, Luca Negrini, Vincenzo Arceri, Thomas Jensen, Fausto Spoto: _"Design and Implementation of Static Analyses for Tezos Smart Contracts"_, in Distributed Ledger Technologies: Research and Practice [[DOI]](https://doi.org/10.1145/3643567) [[LINK]](http://dx.doi.org/10.1145/3643567)
 
+Maikel Lázaro Pérez Gort, Martina Olliaro, Agostino Cortesi: _"Study of the Watermark Source’s Topology Role on Relational Data Watermarking Robustness"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2024.3364760) [[LINK]](https://doi.org/10.1109/ACCESS.2024.3364760)
+
 Roy, S., Raj, S., Chakraborty, T., Chakrabarty, A., Cortesi, A., Sen, S.: _"Efficient OLAP query processing across cuboids in distributed data warehousing environment"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2023.122481) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85175824863&partnerID=MN8TOARS)
 
 ## 2023
