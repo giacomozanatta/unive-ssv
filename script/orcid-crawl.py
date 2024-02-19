@@ -263,10 +263,12 @@ def parse_work(access_token, min_date, max_date, work):
 		where = where.replace("'", "")
 	url = access_field(lambda r: r['url']['value'], workrecord, 'url')
 	doi = None
-	for extid in access_field(lambda r: r['external-ids']['external-id'], workrecord, 'external ids', default=list(), do_log=False):
-		if access_field(lambda r: r['external-id-type'], extid, 'external id type', do_log=False) == 'doi':
-			doi = access_field(lambda r: r['external-id-value'], extid, 'external id')
-			break
+	extids = access_field(lambda r: r['external-ids']['external-id'], workrecord, 'external ids', default=list(), do_log=False)
+	if extids is not None:
+		for extid in extids:
+			if access_field(lambda r: r['external-id-type'], extid, 'external id type', do_log=False) == 'doi':
+				doi = access_field(lambda r: r['external-id-value'], extid, 'external id')
+				break
 	contribs = list()
 	for contributor in access_field(lambda r: r['contributors']['contributor'], workrecord, 'contributors', default=list(), do_log=False):
 		contribs += [access_field(lambda r: r['credit-name']['value'], contributor, 'contributor name')]
