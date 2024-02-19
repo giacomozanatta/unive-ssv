@@ -4,6 +4,8 @@ title: Publications
 ---
 ## 2024
 
+Luca Negrini, Vincenzo Arceri, Agostino Cortesi, Pietro Ferrara: _"Tarsis: An effective automata‐based abstract domain for string analysis"_, in Journal of Software: Evolution and Process [[DOI]](https://doi.org/10.1002/smr.2647) [[LINK]](https://doi.org/10.1002/smr.2647)
+
 Luca Olivieri, Luca Negrini, Vincenzo Arceri, Thomas Jensen, Fausto Spoto: _"Design and Implementation of Static Analyses for Tezos Smart Contracts"_, in Distributed Ledger Technologies: Research and Practice [[DOI]](https://doi.org/10.1145/3643567) [[LINK]](http://dx.doi.org/10.1145/3643567)
 
 Giacomo Boldini, Alessio Diana, Vincenzo Arceri, Vincenzo Bonnici, Roberto Bagnara: _"A Machine Learning Approach for Source Code Similarity via Graph-Focused Features"_, [[DOI]](https://doi.org/10.1007/978-3-031-53969-5_5) [[LINK]](https://doi.org/10.1007/978-3-031-53969-5_5)
