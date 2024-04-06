@@ -14,9 +14,11 @@ Roy, S., Raj, S., Chakraborty, T., Chakrabarty, A., Cortesi, A., Sen, S.: _"Effi
 
 Missing authors: _"Tarsis: An effective automata-based abstract domain for string analysis"_, [[DOI]](https://doi.org/10.1002/smr.2647) [[LINK]](https://iris.unive.it/handle/10278/5050041)
 
+Missing authors: _"A Fragile Watermarking Approach for Earth Observation Data Integrity Protection"_, [[DOI]](https://doi.org/10.1007/978-981-97-0041-7_3) [[LINK]](https://iris.unive.it/handle/10278/5055041)
+
 ## 2023
 
-Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu Chaki: _"SCARS: Suturing wounds due to conflicts between non‐functional requirements in autonomous and robotic systems"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.3297) [[LINK]](https://doi.org/10.1002/spe.3297)
+Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu Chaki: _"SCARS: Suturing wounds due to conflicts between non‐functional requirements in autonomous and robotic systems"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.3297) [[LINK]](http://dx.doi.org/10.1002/spe.3297)
 
 Marco Crosara, Luca Olivieri, Fausto Spoto, Fabio Tagliaferro: _"Fungible and non-fungible tokens with snapshots in Java"_, in Cluster Computing [[DOI]](https://doi.org/10.1007/s10586-022-03756-3) [[LINK]](https://doi.org/10.1007/s10586-022-03756-3)
 
