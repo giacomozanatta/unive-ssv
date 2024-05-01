@@ -4,6 +4,10 @@ title: Publications
 ---
 ## 2024
 
+Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu Chaki: _"SCARS: Suturing wounds due to conflicts between non‐functional requirements in autonomous and robotic systems"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.3297) [[LINK]](https://doi.org/10.1002/spe.3297)
+
+Souvick Das, Novarun Deb, Agostino Cortesi, Nabendu Chaki: _"Extracting goal models from natural language requirement specifications"_, in Journal of Systems and Software [[DOI]](https://doi.org/10.1016/j.jss.2024.111981) [[LINK]](https://doi.org/10.1016/j.jss.2024.111981)
+
 Luca Olivieri, Luca Negrini, Vincenzo Arceri, Thomas Jensen, Fausto Spoto: _"Design and Implementation of Static Analyses for Tezos Smart Contracts"_, in Distributed Ledger Technologies: Research and Practice [[DOI]](https://doi.org/10.1145/3643567) [[LINK]](http://dx.doi.org/10.1145/3643567)
 
 Giacomo Boldini, Alessio Diana, Vincenzo Arceri, Vincenzo Bonnici, Roberto Bagnara: _"A Machine Learning Approach for Source Code Similarity via Graph-Focused Features"_, [[DOI]](https://doi.org/10.1007/978-3-031-53969-5_5) [[LINK]](https://doi.org/10.1007/978-3-031-53969-5_5)
@@ -17,8 +21,6 @@ Missing authors: _"Tarsis: An effective automata-based abstract domain for strin
 Missing authors: _"A Fragile Watermarking Approach for Earth Observation Data Integrity Protection"_, [[DOI]](https://doi.org/10.1007/978-981-97-0041-7_3) [[LINK]](https://iris.unive.it/handle/10278/5055041)
 
 ## 2023
-
-Mandira Roy, Raunak Bag, Novarun Deb, Agostino Cortesi, Rituparna Chaki, Nabendu Chaki: _"SCARS: Suturing wounds due to conflicts between non‐functional requirements in autonomous and robotic systems"_, in Software: Practice and Experience [[DOI]](https://doi.org/10.1002/spe.3297) [[LINK]](http://dx.doi.org/10.1002/spe.3297)
 
 Marco Crosara, Luca Olivieri, Fausto Spoto, Fabio Tagliaferro: _"Fungible and non-fungible tokens with snapshots in Java"_, in Cluster Computing [[DOI]](https://doi.org/10.1007/s10586-022-03756-3) [[LINK]](https://doi.org/10.1007/s10586-022-03756-3)
 
