@@ -12,6 +12,8 @@ Luca Olivieri, Luca Negrini, Vincenzo Arceri, Thomas Jensen, Fausto Spoto: _"Des
 
 Giacomo Boldini, Alessio Diana, Vincenzo Arceri, Vincenzo Bonnici, Roberto Bagnara: _"A Machine Learning Approach for Source Code Similarity via Graph-Focused Features"_, [[DOI]](https://doi.org/10.1007/978-3-031-53969-5_5) [[LINK]](https://doi.org/10.1007/978-3-031-53969-5_5)
 
+Luca Olivieri, Luca Negrini, Vincenzo Arceri, Badaruddin Chachar, Pietro Ferrara, Agostino Cortesi: _"Detection of Phantom Reads in Hyperledger Fabric"_, in IEEE Access [[DOI]](https://doi.org/10.1109/access.2024.3410019) [[LINK]](http://dx.doi.org/10.1109/access.2024.3410019)
+
 Maikel Lázaro Pérez Gort, Martina Olliaro, Agostino Cortesi: _"Study of the Watermark Source’s Topology Role on Relational Data Watermarking Robustness"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2024.3364760) [[LINK]](https://doi.org/10.1109/ACCESS.2024.3364760)
 
 Roy, S., Raj, S., Chakraborty, T., Chakrabarty, A., Cortesi, A., Sen, S.: _"Efficient OLAP query processing across cuboids in distributed data warehousing environment"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2023.122481) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85175824863&partnerID=MN8TOARS)
