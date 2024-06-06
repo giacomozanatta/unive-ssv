@@ -16,6 +16,8 @@ Maikel Lázaro Pérez Gort, Martina Olliaro, Agostino Cortesi: _"Study of the Wa
 
 Roy, S., Raj, S., Chakraborty, T., Chakrabarty, A., Cortesi, A., Sen, S.: _"Efficient OLAP query processing across cuboids in distributed data warehousing environment"_, in Expert Systems with Applications [[DOI]](https://doi.org/10.1016/j.eswa.2023.122481) [[LINK]](http://www.scopus.com/inward/record.url?eid=2-s2.0-85175824863&partnerID=MN8TOARS)
 
+Luca Olivieri, Luca Negrini, Vincenzo Arceri, Badaruddin Chachar, Pietro Ferrara, Agostino Cortesi: _"Detection of Phantom Reads in Hyperledger Fabric"_, in IEEE Access [[DOI]](https://doi.org/10.1109/ACCESS.2024.3410019) [[LINK]](https://doi.org/10.1109/ACCESS.2024.3410019)
+
 Missing authors: _"Tarsis: An effective automata-based abstract domain for string analysis"_, [[DOI]](https://doi.org/10.1002/smr.2647) [[LINK]](https://iris.unive.it/handle/10278/5050041)
 
 Missing authors: _"A Fragile Watermarking Approach for Earth Observation Data Integrity Protection"_, [[DOI]](https://doi.org/10.1007/978-981-97-0041-7_3) [[LINK]](https://iris.unive.it/handle/10278/5055041)
