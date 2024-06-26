@@ -2,7 +2,7 @@
 {% assign letters = letterstring | split: ',' %}
 {% assign number = include.number | minus: 1 %}
 {% assign pics = include.pics %}
-{{ include.pics }}
+images: {{ include.pics }}
 <div class="carousel__holder">
     <div id="carousel{{ number }}" class="carousel">
         {% for item in pics %}
