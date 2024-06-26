@@ -1,0 +1,5 @@
+carousels:
+  - images: #CSV-24
+    - image: {{ site.baseurl }}/unive-ssv/images/csv24-1.jpg
+    - image: {{ site.baseurl }}/unive-ssv/images/csv24-2.jpg
+    - image: {{ site.baseurl }}/unive-ssv/images/csv24-3.jpg
